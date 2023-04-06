@@ -1,0 +1,22 @@
+// selection
+::selection {
+	background-color: $red;
+	color: $light;
+}
+::-moz-selection {
+	background-color: $red;
+	color: $light;
+}
+
+// scrollbar
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: $light;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $dark;
+}

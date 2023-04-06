@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.back_dark {
+	padding: 5px;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+
+	svg {
+		fill: $light;
+		width: 16px;
+		height: 16px;
+	}
+
+	a {
+		font-weight: 500;
+		color: $light;
+		text-decoration: none;
+	}
+}
+
+.back_light {
+	@extend .back_dark;
+
+	svg {
+		fill: $dark;
+	}
+
+	a {
+		color: $dark;
+	}
+}

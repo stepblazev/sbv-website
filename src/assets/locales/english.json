@@ -1,0 +1,25 @@
+{
+	"theme": {
+		"lightTheme": "Light theme",
+		"darkTheme": "Dark theme"
+	},
+	"pages": {
+		"home": {
+			"links": {
+				"resume": "My resume",
+				"github": "My GitHub",
+				"projects": "My projects"
+			},
+			"welcome": {
+				"p1": "Welcome to my website! My name is <b>Eugene Ohvatuk (nickname SBV)</b> and I've been doing web development for more than a year. My main technology stack is React. I try to create web applications that are beautiful, easy to use and as efficient as possible.",
+				"p2": "On this website I present my work and experiments in web development. Here you can read about my projects and learn more about how I work.",
+				"p3": "Be assured that no personal information is collected on my site. If you have any questions, feel free to contact me by email <b>ohvatuki@gmail.com</b>.",
+				"p4": "Thanks for visiting my site, I hope you find a lot of interesting things here!"
+			}
+		},
+		"404": {
+			"message": "Error. This page does not exist."
+		}
+	},
+	"back-home": "Home page"
+}
