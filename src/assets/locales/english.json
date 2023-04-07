@@ -21,6 +21,14 @@
 				"p4": "Thanks for visiting my site, I hope you find a lot of interesting things here!"
 			}
 		},
+		"resume": {
+			"title": "Resume",
+			"content": {
+				"p1": "I'm a Frontend developer with more than 1 year of web development experience (non-commercial experience). I love to develop beautiful and adaptive websites using semantic tags. I know <b>HTML, CSS (also SASS preprocessor), JavaScript (including ES6 syntax)</b>. In the last half year, I've been writing applications using <b>React and Redux</b> libraries. At the moment I am learning <b>TypeScript</b>.",
+				"p2": "I have experience in writing server side applications (API) using <b>Node.js and Express framework</b>. I have some knowledge in <b>SQL</b>, such as database creation and SQL querying (I used PostgreSQL for my own purposes). List of recent projects can be seen at the very bottom.",
+				"p3": "Soon I will finish college (4th year) and hope to find my first job."
+			}
+		},
 		"404": {
 			"message": "Error. This page does not exist."
 		}

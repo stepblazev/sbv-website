@@ -11,8 +11,10 @@ export default function BackHome() {
 
 	return (
 		<div className={isDark ? classes.back_dark : classes.back_light}>
-			<AiOutlineArrowLeft />
-			<Link to='/'>{t('back-home')}</Link>
+			<Link to='/'>
+				<AiOutlineArrowLeft />
+				{t('back-home')}
+			</Link>
 		</div>
 	);
 }

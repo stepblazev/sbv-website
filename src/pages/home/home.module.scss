@@ -35,5 +35,9 @@
 		margin-bottom: 15px;
 		font-weight: 300;
 		font-size: 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
