@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.skills_dark {
+	float: left;
+	padding: 10px;
+	width: 200px;
+	margin-top: 70px;
+	margin-right: 10px;
+	border-radius: 10px;
+	font-weight: 600;
+	background-color: $light;
+	color: $dark;
+	list-style: none;
+
+	li {
+		display: flex;
+		gap: 5px;
+		margin-bottom: 5px;
+		font-size: 18px;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.skills_light {
+	@extend .skills_dark;
+
+	background-color: $dark;
+	color: $light;
+}

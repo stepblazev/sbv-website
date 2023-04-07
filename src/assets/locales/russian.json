@@ -1,4 +1,8 @@
 {
+	"about": {
+		"myname": "Евгений Охватюк",
+		"job": "Frontend разработчик"
+	},
 	"theme": {
 		"lightTheme": "Светлая тема",
 		"darkTheme": "Темная тема"
