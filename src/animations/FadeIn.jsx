@@ -5,7 +5,7 @@ export default function FadeIn({ children }) {
 		opacity: 1,
 		transform: 'translateY(0px)',
 		from: { opacity: 0, transform: 'translateY(-50px)' },
-		config: { duration: 800, easing: easings.easeOutQuart },
+		config: { duration: 700, easing: easings.easeOutQuart },
 	});
 
 	return <animated.div style={props}>{children}</animated.div>;

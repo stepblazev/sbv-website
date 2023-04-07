@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "photostock-react",
+		"github": "https://github.com/stepblazev/photostock-react",
+		"ghPages": null,
+		"preview": {
+			"desktop": "https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg",
+			"mobile": "https://images.unsplash.com/photo-1611068813580-b07ef920964b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+		}
+	},
+	{
+		"id": 2,
+		"name": "photostock-api",
+		"github": "https://github.com/stepblazev/photostock-api",
+		"ghPages": null,
+		"preview": {
+			"desktop": "https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg",
+			"mobile": "https://images.unsplash.com/photo-1611068813580-b07ef920964b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+		}
+	},
+	{
+		"id": 3,
+		"name": "stopwatch-typescript",
+		"github": "https://github.com/stepblazev/stopwatch-typescript",
+		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
+		"preview": {
+			"desktop": "https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg",
+			"mobile": "https://images.unsplash.com/photo-1611068813580-b07ef920964b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+		}
+	},
+	{
+		"id": 3,
+		"name": "landing-techno-teal",
+		"github": "https://github.com/stepblazev/landing-techno-teal",
+		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
+		"preview": {
+			"desktop": "https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg",
+			"mobile": "https://images.unsplash.com/photo-1611068813580-b07ef920964b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+		}
+	}
+]

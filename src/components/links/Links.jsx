@@ -10,16 +10,16 @@ export default function Links() {
 	return (
 		<ul className={classes.links}>
 			<li className={classes.linksItem}>
-				<Link to='/resume'>
-					<AiOutlineFileDone />
-					{t('pages.home.links.resume')}
-				</Link>
-			</li>
-			<li className={classes.linksItem}>
 				<a href='https://github.com/stepblazev' target='_blank'>
 					<TbBrandGithub />
 					{t('pages.home.links.github')}
 				</a>
+			</li>
+			<li className={classes.linksItem}>
+				<Link to='/resume'>
+					<AiOutlineFileDone />
+					{t('pages.home.links.resume')}
+				</Link>
 			</li>
 			<li className={classes.linksItem}>
 				<Link to='/projects'>

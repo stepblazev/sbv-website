@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.projects_dark {
+	margin-bottom: 80px;
+	padding: 20px;
+	max-width: 900px;
+	border-radius: 10px;
+	background-color: $dark;
+	color: $light;
+	fill: $light;
+	border-color: $light;
+
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
+	box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
+
+	a {
+		color: $light;
+		text-decoration: none;
+	}
+}
+
+.projects_light {
+	@extend .projects_dark;
+
+	background-color: $white;
+	color: $dark;
+	fill: $dark;
+	border-color: $dark;
+
+	a {
+		color: $dark;
+	}
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+
+	h1 {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-size: 20px;
+		text-transform: uppercase;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+.list {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	&Item {
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			height: 200px;
+		}
+	}
+}

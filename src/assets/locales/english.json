@@ -29,6 +29,10 @@
 				"p3": "Soon I will finish college (4th year) and hope to find my first job."
 			}
 		},
+		"projects": {
+			"title": "Projects",
+			"content": {}
+		},
 		"404": {
 			"message": "Error. This page does not exist."
 		}
