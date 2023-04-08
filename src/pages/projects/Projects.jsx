@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useContext, useState } from 'react';
 import { themeContext } from '../../other/themeContext';
-import ProjectList from '../../components/project-list/ProjectList';
+import ProjectList from './project-list/ProjectList';
 import BackHome from '../../components/back-home/BackHome';
 import { AiOutlineFolderOpen } from 'react-icons/ai';
 import FadeIn from '../../animations/FadeIn';

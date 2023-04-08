@@ -3,7 +3,7 @@
 		"id": 1,
 		"name": "photostock-react",
 		"type": "frontend",
-		"tech": "js, react, redux, css",
+		"tech": "js, react, redux, css, axios",
 		"github": "https://github.com/stepblazev/photostock-react",
 		"preview": {
 			"desktop": "https://lh3.google.com/u/0/d/1kIfObJENWKKrRdJqaAYEVZ2KQHTVN6Be=w1382-h937-iv1",
@@ -30,7 +30,7 @@
 		"id": 3,
 		"name": "landing-techno-teal",
 		"type": "frontend",
-		"tech": "html, css, js",
+		"tech": "html, css, js, gulp",
 		"github": "https://github.com/stepblazev/landing-techno-teal",
 		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
 		"preview": {
@@ -42,6 +42,11 @@
 		"id": 4,
 		"name": "photostock-api",
 		"type": "backend",
-		"github": "https://github.com/stepblazev/photostock-api"
+		"tech": "node, express, jwt, sql",
+		"github": "https://github.com/stepblazev/photostock-api",
+		"description": {
+			"ru": "Данный проект на Node.js использует фреймворк Express для создания серверной части приложения. Для хранения данных используется PostgreSQL.Проект реализует систему авторизации с использованием JWT-токенов и cookies. Он обрабатывает изображения, полученные от клиента, и хранит их на сервере. В целом, проект предоставляет возможность клиентам загружать изображения на сервер, а также обрабатывать их на серверной стороне. Система авторизации и работа с базой данных обеспечивают безопасность и эффективность работы приложения.",
+			"en": "This Node.js project uses the Express framework to create the server side of the application. It uses PostgreSQL to store data.The project implements an authorization system using JWT tokens and cookies. It processes the images received from the client and stores them on the server. In general, the project allows clients to upload images to the server and process them on the server side. The authorization system and database handling ensure the security and efficiency of the application."
+		}
 	}
 ]

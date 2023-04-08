@@ -10,7 +10,7 @@
 	"pages": {
 		"home": {
 			"links": {
-				"resume": "Мое резюме",
+				"resume": "Моё резюме",
 				"github": "Мой GitHub",
 				"projects": "Мои проекты"
 			},

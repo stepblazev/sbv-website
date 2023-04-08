@@ -1,5 +1,7 @@
+@import '../../../styles/variables';
+
 .item {
-	max-width: 650px;
+	max-width: 800px;
 	padding: 10px;
 	border-radius: 7px;
 	display: flex;
@@ -13,6 +15,10 @@
 	&Name {
 		text-transform: uppercase;
 		font-size: 20px;
+
+		@media (max-width: 600px) {
+			font-size: 16px;
+		}
 	}
 
 	&Links {
@@ -29,6 +35,10 @@
 			letter-spacing: 2px;
 			font-weight: 500;
 
+			@media (max-width: 600px) {
+				font-size: 14px;
+			}
+
 			&:hover {
 				background-color: rgba(0, 0, 0, 0.15);
 			}
@@ -41,27 +51,28 @@
 		height: 300px;
 		width: 100%;
 
-		display: flex;
+		@media (max-width: 600px) {
+			height: 200px;
+		}
 	}
 
 	&Tech {
 		display: flex;
-		gap: 20px;
+		column-gap: 20px;
+		row-gap: 10px;
 		flex-wrap: wrap;
 	}
 
 	&ShowBtn {
-		display: flex;
-		justify-content: end;
-		align-items: center;
 		gap: 5px;
 		background: transparent;
 		color: inherit;
 		font-weight: 500;
 		text-transform: uppercase;
-		svg {
-			transition: all 0.3s ease;
-		}
+		text-align: right;
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: -8px;
 	}
 
 	&Desc {
@@ -69,5 +80,9 @@
 		transition: all 0.3s ease;
 		overflow: hidden;
 		font-size: 14px;
+
+		@media (max-width: 600px) {
+			text-align: left;
+		}
 	}
 }

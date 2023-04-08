@@ -1,10 +1,20 @@
 .skill {
 	display: flex;
+	align-items: center;
 	gap: 5px;
 	font-size: 18px;
 
 	svg {
-		width: 20px;
-		height: 20px;
+		width: 18px;
+		height: 18px;
+	}
+
+	@media (max-width: 600px) {
+		font-size: 14px;
+
+		svg {
+			width: 15px;
+			height: 15px;
+		}
 	}
 }

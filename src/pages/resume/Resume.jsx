@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { themeContext } from '../../other/themeContext';
 import BackHome from '../../components/back-home/BackHome';
 import { AiOutlineFileDone } from 'react-icons/ai';
-import Skills from '../../components/skills/Skills';
+import Skills from './skills/Skills';
 import FadeIn from '../../animations/FadeIn';
 import SlideIn from '../../animations/SlideIn';
 import ImageLoader from '../../components/image-loader/ImageLoader';

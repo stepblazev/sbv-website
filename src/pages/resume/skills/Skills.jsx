@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { themeContext } from '../../other/themeContext';
+import { themeContext } from '../../../other/themeContext';
 import classes from './skills.module.scss';
 import {
 	Css,
@@ -9,7 +9,7 @@ import {
 	React,
 	Redux,
 	Typescript,
-} from '../export-skills/ExportSkills';
+} from '../../../components/export-skills/ExportSkills';
 
 export default function Skills() {
 	const { isDark } = useContext(themeContext);

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { VscCode } from 'react-icons/vsc';
-import Links from '../../components/links/Links';
+import Links from './links/Links';
 import FadeIn from '../../animations/FadeIn';
 import { useTranslation } from 'react-i18next';
 import { themeContext } from '../../other/themeContext';

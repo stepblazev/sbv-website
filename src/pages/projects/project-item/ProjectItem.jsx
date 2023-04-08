@@ -2,8 +2,8 @@ import { Fragment, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
-import { skillDictionary } from '../export-skills/ExportSkills';
-import ImageLoader from '../image-loader/ImageLoader';
+import { skillDictionary } from '../../../components/export-skills/ExportSkills';
+import ImageLoader from '../../../components/image-loader/ImageLoader';
 import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {
@@ -50,7 +50,10 @@ export default function ProjectItem({ project }) {
 						className={classes.itemDesc}
 						style={
 							showDesc
-								? { height: '150px', overflowY: 'scroll' }
+								? {
+										height: '120px',
+										overflowY: 'scroll',
+								  }
 								: { height: '0px' }
 						}
 					>
