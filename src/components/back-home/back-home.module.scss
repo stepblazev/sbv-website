@@ -2,6 +2,8 @@
 
 .back_dark {
 	padding: 5px;
+	position: relative;
+	z-index: 100;
 
 	a {
 		display: inline-flex;

@@ -31,6 +31,10 @@
 		},
 		"projects": {
 			"title": "Projects",
+			"repo": "Repository",
+			"demo": "Demo",
+			"more": "description",
+			"hide": "hide",
 			"content": {}
 		},
 		"404": {

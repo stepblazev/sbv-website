@@ -50,19 +50,3 @@
 		}
 	}
 }
-
-.list {
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-
-	&Item {
-		display: flex;
-		justify-content: space-between;
-
-		img {
-			height: 200px;
-		}
-	}
-}

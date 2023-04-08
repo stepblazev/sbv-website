@@ -1,15 +1,18 @@
 import { useTranslation } from 'react-i18next';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { themeContext } from '../../other/themeContext';
+import ProjectList from '../../components/project-list/ProjectList';
 import BackHome from '../../components/back-home/BackHome';
 import { AiOutlineFolderOpen } from 'react-icons/ai';
-import classes from './projects.module.scss';
 import FadeIn from '../../animations/FadeIn';
-import projects from './projects.json';
+import projectsJSON from '../../assets/projects.json';
+import classes from './projects.module.scss';
 
 export default function Projects() {
 	const { t } = useTranslation();
 	const { isDark } = useContext(themeContext);
+
+	const [projects, setProjects] = useState(projectsJSON);
 
 	return (
 		<FadeIn>
@@ -21,24 +24,7 @@ export default function Projects() {
 						{t('pages.projects.title')}
 					</h1>
 				</div>
-				<div className={classes.list}>
-					{projects.map((project) => (
-						<div className={classes.listItem}>
-							<div>
-								<a href={project.github} target='_blank'>
-									Репозиторий
-								</a>
-								{Boolean(project.ghPages) && (
-									<a href={project.ghPages} target='_blank'>
-										Демо
-									</a>
-								)}
-							</div>
-							<img src={project.preview.desktop} alt='DESKTOP' />
-							<img src={project.preview.mobile} alt='MOBILE' />
-						</div>
-					))}
-				</div>
+				<ProjectList projects={projects} />
 			</div>
 		</FadeIn>
 	);

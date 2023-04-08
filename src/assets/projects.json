@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"name": "photostock-react",
+		"type": "frontend",
+		"tech": "js, react, redux, css",
+		"github": "https://github.com/stepblazev/photostock-react",
+		"preview": {
+			"desktop": "https://lh3.google.com/u/0/d/1kIfObJENWKKrRdJqaAYEVZ2KQHTVN6Be=w1382-h937-iv1",
+			"mobile": "https://lh3.google.com/u/0/d/1AIEyKAm6m6Pm7XTcqSEBpjXTKsEU7r1u=w1382-h937-iv1"
+		},
+		"description": {
+			"ru": "Проект является фотостоком (изображения), то есть он предоставляет возможность пользователям искать, просматривать и загружать изображения. В проекте реализована система авторизации, которая позволяет пользователям создавать учетные записи и входить в свои аккаунты. Для хранения изображений и информации о пользователях используется внешний проект photostock-api, с которым взаимодействует данное приложение. В проекте реализованы функции поиска изображений по тегам, а также возможность сортировки результатов по дате или количеству лайков. Также проект включает в себя возможность загрузки собственных изображений пользователей, а также систему рейтинга, позволяющую пользователям ставить лайк. Основной интерфейс приложения реализован с помощью React, а взаимодействие с сервером осуществляется с использованием Axios. Проект пока не завершен до конца.",
+			"en": "The project is a photostock (images), that is, it allows users to search, browse and download images. The project implements an authorization system that allows users to create accounts and log in to their accounts. To store images and information about users, an external project photostock-api is used, with which this application interacts. The project includes features for searching images by tags, as well as the ability to sort results by date or number of likes. The project also includes the ability to upload users' own images, as well as a rating system that allows users to give likes. The main interface of the application is implemented using React, and the interaction with the server is done using Axios. The project is not yet complete to the end."
+		}
+	},
+	{
+		"id": 2,
+		"name": "stopwatch-typescript",
+		"type": "frontend",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/stopwatch-typescript",
+		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
+		"preview": {
+			"desktop": "https://lh3.google.com/u/0/d/1XyXID4jKe5DA6pVfZrV9a4hmN7CLtRgY=w1920-h937-iv1",
+			"mobile": "https://lh3.google.com/u/0/d/1sfvWenn_GFdEqry6aNyz-C3-mAs0IaZg=w1382-h937-iv1"
+		}
+	},
+	{
+		"id": 3,
+		"name": "landing-techno-teal",
+		"type": "frontend",
+		"tech": "html, css, js",
+		"github": "https://github.com/stepblazev/landing-techno-teal",
+		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
+		"preview": {
+			"desktop": "https://lh3.google.com/u/0/d/19-c62MfJXe2GkRzbfHE2GSijzpnxIHof=w1382-h937-iv1",
+			"mobile": "https://lh3.google.com/u/0/d/1MvgvM0KRdSdCJlpxh6jeKKH2qfhx44Ar=w1382-h937-iv1"
+		}
+	},
+	{
+		"id": 4,
+		"name": "photostock-api",
+		"type": "backend",
+		"github": "https://github.com/stepblazev/photostock-api"
+	}
+]

@@ -13,15 +13,7 @@
 	list-style: none;
 
 	li {
-		display: flex;
-		gap: 5px;
 		margin-bottom: 5px;
-		font-size: 18px;
-
-		svg {
-			width: 20px;
-			height: 20px;
-		}
 
 		&:last-child {
 			margin-bottom: 0;

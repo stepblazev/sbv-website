@@ -1,0 +1,73 @@
+.item {
+	max-width: 650px;
+	padding: 10px;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	-webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+
+	&Name {
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+
+	&Links {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			border-radius: 3px;
+			transition: none;
+			letter-spacing: 2px;
+			font-weight: 500;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.15);
+			}
+		}
+	}
+
+	&Images {
+		border-radius: 7px;
+		overflow: hidden;
+		height: 300px;
+		width: 100%;
+
+		display: flex;
+	}
+
+	&Tech {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	&ShowBtn {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		gap: 5px;
+		background: transparent;
+		color: inherit;
+		font-weight: 500;
+		text-transform: uppercase;
+		svg {
+			transition: all 0.3s ease;
+		}
+	}
+
+	&Desc {
+		text-align: justify;
+		transition: all 0.3s ease;
+		overflow: hidden;
+		font-size: 14px;
+	}
+}

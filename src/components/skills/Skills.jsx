@@ -1,9 +1,15 @@
-import { SiSass, SiJavascript, SiTypescript, SiExpress, SiHtml5 } from 'react-icons/si';
-import { TbBrandRedux } from 'react-icons/tb';
-import { FaReact } from 'react-icons/fa';
 import { useContext } from 'react';
 import { themeContext } from '../../other/themeContext';
 import classes from './skills.module.scss';
+import {
+	Css,
+	Express,
+	Html,
+	Javascript,
+	React,
+	Redux,
+	Typescript,
+} from '../export-skills/ExportSkills';
 
 export default function Skills() {
 	const { isDark } = useContext(themeContext);
@@ -11,32 +17,25 @@ export default function Skills() {
 	return (
 		<ul className={isDark ? classes.skills_dark : classes.skills_light}>
 			<li>
-				<SiHtml5 />
-				HTML5
+				<Html />
 			</li>
 			<li>
-				<SiSass />
-				CSS / SASS
+				<Css />
 			</li>
 			<li>
-				<SiJavascript />
-				JavaScript
+				<Javascript />
 			</li>
 			<li>
-				<SiTypescript />
-				TypeScript
+				<Typescript />
 			</li>
 			<li>
-				<FaReact />
-				React
+				<React />
 			</li>
 			<li>
-				<TbBrandRedux />
-				Redux
+				<Redux />
 			</li>
 			<li>
-				<SiExpress />
-				Express
+				<Express />
 			</li>
 		</ul>
 	);
