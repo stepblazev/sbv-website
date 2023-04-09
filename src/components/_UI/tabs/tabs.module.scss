@@ -1,0 +1,8 @@
+@import '../../../styles/variables';
+
+.tabs_dark {
+}
+
+.tabs_light {
+	@extend .tabs_dark;
+}

@@ -58,9 +58,10 @@
 
 	&Tech {
 		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		column-gap: 20px;
 		row-gap: 10px;
-		flex-wrap: wrap;
 	}
 
 	&ShowBtn {

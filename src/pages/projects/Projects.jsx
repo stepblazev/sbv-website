@@ -7,6 +7,7 @@ import { AiOutlineFolderOpen } from 'react-icons/ai';
 import FadeIn from '../../animations/FadeIn';
 import projectsJSON from '../../assets/projects.json';
 import classes from './projects.module.scss';
+import Tabs from '../../components/_UI/tabs/Tabs';
 
 export default function Projects() {
 	const { t } = useTranslation();
@@ -25,6 +26,15 @@ export default function Projects() {
 					</h1>
 				</div>
 				<ProjectList projects={projects} />
+				<Tabs
+					data={[
+						{ title: 'Client', element: <ProjectList projects={projects} /> },
+						{
+							title: 'Server',
+							element: <ProjectList projects={projects} />,
+						},
+					]}
+				/>
 			</div>
 		</FadeIn>
 	);
