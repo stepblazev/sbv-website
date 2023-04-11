@@ -27,7 +27,10 @@ export default function ProjectItem({ project }) {
 			</div>
 			{Boolean(project.preview) && (
 				<div className={classes.itemImages}>
-					<ImageLoader src={project.preview.desktop} />
+					<ImageLoader
+						position={project.type === 'client' ? 'top' : 'center'}
+						src={project.preview.desktop}
+					/>
 					{/* <ImageLoader src={project.preview.mobile} /> */}
 				</div>
 			)}

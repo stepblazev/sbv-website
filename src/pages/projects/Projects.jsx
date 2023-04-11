@@ -13,7 +13,20 @@ export default function Projects() {
 	const { t } = useTranslation();
 	const { isDark } = useContext(themeContext);
 
-	const [projects, setProjects] = useState(projectsJSON);
+	const [clientProjects, setClientProjects] = useState(
+		projectsJSON.filter((p) => p.type === 'client')
+	);
+	const [serverProjects, setServerProjects] = useState(
+		projectsJSON.filter((p) => p.type === 'server')
+	);
+
+	// const setDemo = (e) => {
+	// 	if (e.target.checked) {
+	// 		setClientProjects((prev) => prev.filter((p) => p.hasOwnProperty('ghPages')));
+	// 	} else {
+	// 		setClientProjects(projectsJSON.filter((p) => p.type === 'client'));
+	// 	}
+	// };
 
 	return (
 		<FadeIn>
@@ -25,13 +38,29 @@ export default function Projects() {
 						{t('pages.projects.title')}
 					</h1>
 				</div>
-				<ProjectList projects={projects} />
 				<Tabs
 					data={[
-						{ title: 'Client', element: <ProjectList projects={projects} /> },
 						{
-							title: 'Server',
-							element: <ProjectList projects={projects} />,
+							title: t('pages.projects.client'),
+							element: (
+								<>
+									{/* <div className={classes.demo}>
+										<input
+											type='checkbox'
+											id='demo'
+											onChange={setDemo}
+										/>
+										<label htmlFor='demo'>
+											{t('pages.projects.onlyDemo')}
+										</label>
+									</div> */}
+									<ProjectList projects={clientProjects} />
+								</>
+							),
+						},
+						{
+							title: t('pages.projects.server'),
+							element: <ProjectList projects={serverProjects} />,
 						},
 					]}
 				/>

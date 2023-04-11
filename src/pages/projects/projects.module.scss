@@ -17,6 +17,44 @@
 		color: $light;
 		text-decoration: none;
 	}
+
+	input[type='checkbox'] {
+		display: none;
+	}
+	input[type='checkbox'] + label {
+		display: block;
+		margin-top: 20px;
+		position: relative;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			width: 15px;
+			height: 15px;
+			background-color: $light;
+			border: 3px solid $light;
+			border-radius: 5px;
+			position: absolute;
+			top: 50%;
+			left: -30px;
+			transform: translateY(-50%);
+			transition: all 0.2s ease;
+		}
+	}
+	input[type='checkbox']:checked + label {
+		font-weight: 700;
+
+		&::before {
+			background-color: $dark;
+		}
+	}
+
+	@media (max-width: 500px) {
+		border-radius: 0;
+		width: calc(100% + $container_padding * 2);
+		margin: 0 -$container_padding;
+		margin-top: 0;
+	}
 }
 
 .projects_light {
@@ -48,4 +86,9 @@
 			height: 20px;
 		}
 	}
+}
+
+.demo {
+	display: flex;
+	justify-content: end;
 }

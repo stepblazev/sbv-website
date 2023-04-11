@@ -55,6 +55,11 @@ export default function Resume() {
 								__html: t('pages.resume.content.p3'),
 							}}
 						></p>
+						<p
+							dangerouslySetInnerHTML={{
+								__html: t('pages.resume.content.p4'),
+							}}
+						></p>
 					</div>
 				</div>
 			</div>

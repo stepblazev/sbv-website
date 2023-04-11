@@ -24,6 +24,13 @@
 		right: 70px;
 		bottom: 70px;
 	}
+
+	@media (max-width: 500px) {
+		border-radius: 0;
+		width: calc(100% + $container_padding * 2);
+		margin: 0 -$container_padding;
+		margin-top: 0;
+	}
 }
 
 .resume_light {

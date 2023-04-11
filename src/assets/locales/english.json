@@ -24,9 +24,10 @@
 		"resume": {
 			"title": "Resume",
 			"content": {
-				"p1": "I'm a Frontend developer with more than 1 year of web development experience (non-commercial experience). I love to develop beautiful and adaptive websites using semantic tags. I know <b>HTML, CSS (also SASS preprocessor), JavaScript (including ES6 syntax)</b>. In the last half year, I've been writing applications using <b>React and Redux</b> libraries. At the moment I am learning <b>TypeScript</b>.",
-				"p2": "I have experience in writing server side applications (API) using <b>Node.js and Express framework</b>. I have some knowledge in <b>SQL</b>, such as database creation and SQL querying (I used PostgreSQL for my own purposes). List of recent projects can be seen at the very bottom.",
-				"p3": "Soon I will finish college (4th year) and hope to find my first job."
+				"p1": "My name is Eugene Ohvatuk, and at the moment I'm finishing my college studies in the field of IT software. Web development I started more than a year ago and during this time I have some experience in this area.",
+				"p2": "I am proficient in <b>HTML, CSS (as well as the SASS preprocessor) and JavaScript, including ES6 syntax</b>. In the last six months I've been writing applications using <b>React and Redux libraries</b>. I am constantly improving my skills and am currently learning <b>TypeScript</b>.",
+				"p3": "However, my work is not limited to the frontend. I also have experience with the server side of applications using <b>Node.js and the Express framework</b>. I am also familiar with <b>SQL</b>, and I have experience creating databases and running SQL queries (I used <b>PostgreSQL</b> for my purposes).",
+				"p4": "I'm ready to apply my knowledge and web development skills to new projects and continue my professional growth. I'm looking for a Frontend Developer position with a company where I can gain new experience and learn more about modern web development technologies. I look forward to discussing my qualification and joining your team."
 			}
 		},
 		"projects": {
@@ -35,6 +36,9 @@
 			"demo": "Demo",
 			"more": "description",
 			"hide": "hide",
+			"client": "Client",
+			"server": "Server",
+			"onlyDemo": "Only demo",
 			"content": {}
 		},
 		"404": {

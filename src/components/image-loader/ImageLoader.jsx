@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Loader from '../_UI/loader/Loader';
 import classes from './image-loader.module.scss';
 
-export default function ImageLoader({ src }) {
+export default function ImageLoader({ src, position }) {
 	const [loaded, setLoaded] = useState(false);
 
 	function handleImageLoad() {
@@ -19,7 +19,7 @@ export default function ImageLoader({ src }) {
 			<img
 				src={src}
 				onLoad={handleImageLoad}
-				style={{ opacity: loaded ? '1' : '0' }}
+				style={{ opacity: loaded ? '1' : '0', objectPosition: position ?? 'top' }}
 			/>
 		</div>
 	);
