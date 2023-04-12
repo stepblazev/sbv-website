@@ -14,10 +14,11 @@
 		padding: 10px;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 600px) {
 		border-radius: 0;
 		width: calc(100% + $container_padding * 2);
-		margin: 0 -$container_padding;
+		margin-left: -$container_padding;
+		margin-right: -$container_padding;
 	}
 }
 

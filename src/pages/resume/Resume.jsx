@@ -24,21 +24,21 @@ export default function Resume() {
 						{t('pages.resume.title')}
 					</h1>
 				</div>
-				<div className={classes.avatar}>
-					<SlideIn delay={250}>
-						<div className={classes.avatarImage}>
-							<ImageLoader src={saitama} />
-						</div>
-					</SlideIn>
-					<div className={classes.avatarInfo}>
-						<h1 className={classes.avatarName}>{t('about.myname')}</h1>
-						<h2 className={classes.avatarJob}>{t('about.job')}</h2>
-					</div>
+				<div className={classes.info}>
+					<h1 className={classes.infoName}>{t('about.myname')}</h1>
+					<h2 className={classes.infoJob}>{t('about.job')}</h2>
 				</div>
 				<div className={classes.content}>
-					<SlideIn delay={500}>
-						<Skills />
-					</SlideIn>
+					<div className={classes.contentImage}>
+						<SlideIn delay={250}>
+							<div className={classes.avatar}>
+								<ImageLoader src={saitama} />
+							</div>
+						</SlideIn>
+						<SlideIn delay={500}>
+							<Skills />
+						</SlideIn>
+					</div>
 					<div className={classes.contentText}>
 						<p
 							dangerouslySetInnerHTML={{
