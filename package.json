@@ -7,9 +7,10 @@
 		"dev": "vite --open",
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "gh-pages -d build"
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
-	"homepage": "https://stepblazev.github.io/sbv-website",
+	"homepage": "https://stepblazev.github.io/sbv-website/",
 	"dependencies": {
 		"i18next": "^22.4.14",
 		"react": "^18.2.0",
