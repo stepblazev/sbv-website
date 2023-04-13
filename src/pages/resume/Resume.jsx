@@ -7,7 +7,7 @@ import Skills from './skills/Skills';
 import FadeIn from '../../animations/FadeIn';
 import SlideIn from '../../animations/SlideIn';
 import ImageLoader from '../../components/image-loader/ImageLoader';
-import saitama from '../../assets/images/saitama.png';
+import user from '../../assets/images/coming-soon-person.webp';
 import classes from './resume.module.scss';
 
 export default function Resume() {
@@ -32,7 +32,7 @@ export default function Resume() {
 					<div className={classes.contentImage}>
 						<SlideIn delay={250}>
 							<div className={classes.avatar}>
-								<ImageLoader src={saitama} />
+								<ImageLoader src={user} />
 							</div>
 						</SlideIn>
 						<SlideIn delay={500}>
