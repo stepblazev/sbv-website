@@ -1,12 +1,9 @@
 import { Fragment, useContext, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { themeContext } from '../../../other/themeContext';
 import classes from './tabs.module.scss';
 
 export default function Tabs({ data }) {
 	const { isDark } = useContext(themeContext);
-	const { t } = useTranslation();
-
 	const [page, setPage] = useState(0);
 
 	return (

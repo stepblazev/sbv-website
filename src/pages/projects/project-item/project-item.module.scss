@@ -74,15 +74,4 @@
 		font-weight: 700;
 		margin-bottom: -8px;
 	}
-
-	&Desc {
-		text-align: justify;
-		transition: all 0.3s ease;
-		overflow: hidden;
-		font-size: 14px;
-
-		@media (max-width: 600px) {
-			text-align: left;
-		}
-	}
 }

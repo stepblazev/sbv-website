@@ -1,6 +1,5 @@
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Home from '../pages/home/Home';
-// import NotFound from '../pages/not-found/NotFound';
 import Resume from '../pages/resume/Resume';
 import Projects from '../pages/projects/Projects';
 

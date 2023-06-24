@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
@@ -7,8 +7,7 @@ import ImageLoader from '../../../components/image-loader/ImageLoader';
 import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {
-	const { t, i18n } = useTranslation();
-	const [showDesc, setShowDesc] = useState(false);
+	const { t } = useTranslation();
 
 	return (
 		<div className={classes.item}>
@@ -31,7 +30,6 @@ export default function ProjectItem({ project }) {
 						position={project.type === 'client' ? 'top' : 'center'}
 						src={project.preview.desktop}
 					/>
-					{/* <ImageLoader src={project.preview.mobile} /> */}
 				</div>
 			)}
 			{Boolean(project.tech) && (
@@ -40,29 +38,6 @@ export default function ProjectItem({ project }) {
 						<Fragment key={t}>{skillDictionary[t.trim()]}</Fragment>
 					))}
 				</div>
-			)}
-			{Boolean(project.description) && (
-				<Fragment>
-					<button
-						onClick={() => setShowDesc((prev) => !prev)}
-						className={classes.itemShowBtn}
-					>
-						{showDesc ? t('pages.projects.hide') : t('pages.projects.more')}
-					</button>
-					<div
-						className={classes.itemDesc}
-						style={
-							showDesc
-								? {
-										height: '120px',
-										overflowY: 'scroll',
-								  }
-								: { height: '0px' }
-						}
-					>
-						{project.description[i18n.language]}
-					</div>
-				</Fragment>
 			)}
 		</div>
 	);

@@ -1,85 +1,45 @@
 [
 	{
 		"id": 1,
-		"name": "photostock-react",
-		"type": "client",
-		"tech": "js, react, redux, css, axios",
-		"github": "https://github.com/stepblazev/photostock-react",
-		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/60Cn9ojc5pcpNti094CF1c_1VgK-US0_Cr8GBNP39oOfDopZrKVL833_8lXa9YBTuYADkfz2Zzu2uRcz_nnn3YjwzEsRhrs_etQfrlcZHTkBuLCQ_laMBRa3IaFP-Uv9Tez_LbxNfKsbRMwKTm09EucCzVbq5sIlwizGZi810h1jCca6P2-dG2D83jI8lrcw8WxXKtJDIwtsZ35_5fi-P5vt0flV80dLoGehy3uiwMdHFEHrOBmY8JXPlY1WHoKGqIw0B2qPOqhp7neb7_5DUgMGJecXmDvm-oR6YIf678Y8EWwUpZN3Pdev2iWNxk6CkSbyvpIzPPzyZCqZPo-QB3czonrPkFtHyl1eesVnjFs584HdAbx5iwk3bnZ8ONx37vn6-McfUXaUwoLBMKS40OWAkqooKb0YH2nMvg5jrn4tiSWhf-03cOrUKxvAKBYzs3X-HTMv45Wu53JNvaxMFyC7kURr92Y8y3WjYBeZoTrJQQwgVePjC4gomlGFFS1eoLN_0IAHCo-7hvPXRHBtYoatPl1ywi89ruqaRHU7SqRNihWP6xYrK0N9NAS6BzqABnJ18mjNqAMuXxzZdQ_e0cBSH_9OS5Ywq2XLZZ9e45Vv4uWIDDZ-rHmYZL6gjWBcZo_v36VjODpeBo29bDmQyoa0525Tv9x5SJ7kvzadTKaUAyaP5PsHuW6WF5f47QdUUt6JZ4h3O3CzMRZx-8bqkec264fAIyupZZzb8vIPfpIiCK46Zi11OG-fg6G0Bp7G0H9IInOyqEJS-QIUR0ieqsWITbUYE3T_LEH4VaxME_9w-F66D1VaHp1YrfVYZ_S8h_U2yBQFPAG8yKntfqmBg2Jnuriz21Ag_34eBIMJQbr-r4GB65vrYU5G7ARVhFmekiVy4lhXf7OnIJL-um5vUhUfH1atAhr0DPGU0b9wqAxl_swTo_3Ri30ONE3iTp5rfIPF2Euf5KsCkbuOOQ=w1393-h681-s-no?authuser=0",
-			"mobile": ""
-		},
-		"description": {
-			"ru": "Проект является фотостоком (изображения), то есть он предоставляет возможность пользователям искать, просматривать и загружать изображения. В проекте реализована система авторизации, которая позволяет пользователям создавать учетные записи и входить в свои аккаунты. Для хранения изображений и информации о пользователях используется внешний проект photostock-api, с которым взаимодействует данное приложение. В проекте реализованы функции поиска изображений по тегам, а также возможность сортировки результатов по дате или количеству лайков. Также проект включает в себя возможность загрузки собственных изображений пользователей, а также систему рейтинга, позволяющую пользователям ставить лайк. Основной интерфейс приложения реализован с помощью React, а взаимодействие с сервером осуществляется с использованием Axios. Проект пока не завершен до конца.",
-			"en": "The project is a photostock (images), that is, it allows users to search, browse and download images. The project implements an authorization system that allows users to create accounts and log in to their accounts. To store images and information about users, an external project photostock-api is used, with which this application interacts. The project includes features for searching images by tags, as well as the ability to sort results by date or number of likes. The project also includes the ability to upload users' own images, as well as a rating system that allows users to give likes. The main interface of the application is implemented using React, and the interaction with the server is done using Axios. The project is not yet complete to the end."
-		}
-	},
-	{
-		"id": 5,
-		"name": "sbv-website",
-		"type": "client",
-		"tech": "js, react, css",
-		"github": "https://github.com/stepblazev/sbv-website",
-		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/F5x_HXkk3ZkE8zuxQKsizv2BA3w_4aMaghI4gcZqpSH0YmNszcrwxQ5-9TQku1wVoBVodLQ2t5kReryYspBgRd9s5ceF9DPs581PHydqGKxaNj8XeqV_umoWaysX7ymm1jYf31uv_kv7K9iz4oynKZkbII-gdo1Rts3WmO1I6RVihuWyn-Q1NkLPOyIweiW67SiQmeYFRFMwj3vb5vn1DF6XhtbfB3Mgofmhrv-x3_8pUa3yPeGITxybw_VVobATPX2BUzXHcP2WN0-DTA_SXyFueOll48meVyS-dcb-meuF4-AEuXsuWBeuaPdA7DMQ_-nqCFxUGUSRjOsyS8Yc2cf_PrN2Wj6dDM8BFDljdDNsSMlewl8JQGbJYc03UX4qwha9l62zIF5-cFPKY3-ZQwybrNF-j2GRBbASPYuwfbLBnJFM9ZCoa6BjETUomtUSag1AmJdFtJ_aV_WiyFQbELyTC-oGB2sMDWwc5UwmiCYFepSdNTHlPDTF_tW-UsTVf7ik43k2tL9-qfqzN8kD8rQR-EYQKm14j-NamLMm0pYVVhFbf9IYj5waJ2ZEkrQNL1NVaG5T1ezrjn0keapRzP4lm3J6Cs_N8Ip9LmC_ptyT7Y9fUnuqHv5egEfOOR1ecUUDvsghnGmDjclFOqkFrfAE3URKm0qmlPhrvYB4N-XV7_dryc756e_sqFj6gv3TMJa-jdjTUj6t5ednQD19-nRCJ7RjKJt8hjYnv6MI96jwJfyE6_7xvxQo9VukNb6xSAN_TH9dMrazVZdlpnSuAB7myh2_yUysUYh3siSxizj2KXHv5y94QuG-xUC8jW0bFf07gvI1ksrpAkP8gGkueJgU7PCy8BRvYu0QMB3Z5VSSPHxvbagFNRPCjZ1ktaGiC7hQR_FemQpwo0uqaOmhpxuwV2v1vUbRmGNEW_vKYD-nMtZBm1LCOAo1Rv19R-1yd2tIVDiBZcBYAQTazg=w1393-h675-s-no?authuser=0"
-		}
-	},
-	{
-		"id": 4,
-		"name": "landing-techno-teal",
-		"type": "client",
-		"tech": "html, css, js, gulp",
-		"github": "https://github.com/stepblazev/landing-techno-teal",
-		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
-		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/BrPzaPhTsj3B49e3IO4YDDMhXNcSgI-AMq5nT-FupN4Qv0PhMBk5qmmR9IwAexuRbUn3jOJVHl814tsbfM7L1J-wTr1xFNHApFhb80tpvS-zKtG0PIeRSu74u8KFk-58-SOFOiY_-co5qXMcaIEI4dGNoso8jzVu3f4-qsg16GSDSVZTkmyen8ZA1WvU1gxdtK6lr6spZ4jNxtgS6TNPLNbaNYWbLIVZIJmS9-g3tMf9TaJTX4wC7TMrNPB3MM1QASfp005DZoIQ0Tc1exZ4M2j45rVGbZ-9u07IubiOgc28ZtxCH4deUSq1I5DKqN9hBnmJj97VL09Z2Q-By2mTXXUywcub8uLPm0BsMsfOkWWGyXTJ5uvtl78ryS1SpQZAWlo6cBniMAOE-ICaFfQDPjJEO6hr2FZhsoWgne2ZZEvel6T1TS4qMnigc7PnBdLeewDabSzR4ui7AHTyVqGOKZ8EhisBuslrXvWNKHO0_FVCb77RNJVGF6ohPRMLlBa37jWQvSiGXYknNhoMqhi4hBdRg-cIpn-Vp5qNm7Qrw2cufogbeWrsnekCoaj4-x-I3NYWupFrBUCKtqEeHWTjYgcX5uqK0YqOHw-G3Og0cY575OxSYHZJ2MG7n_Lw3Q6J1awMueU0Y9trc_ISc92DyBdPZF7QUJ92PfLTNzVlwB4O7nWV3BnfS72AKbm-f3FJvklb_lUPtBOuWh79h9ZPa8Yy_L5vVAZneje8xPPXEGuJcF0kXX84E74EHiq8jFRwuklsFqXaT_nU2nHaNcIAGIpP4TzEn7pE6zyG0kzoeZOJUsYQlMux9JqsT-BmoKnXCSOg5ohSwTfdaGMwgtCFQhRHDgbiq7qZeCj4b4Z6C58kpc3S_f9IzO4GmPgOVYk5LqKYFrRrPIRahB9Raoa7OXUz3ik4jGOKnaGZUxKtoriUpfxlGO7BRY04s3jfh411oPLFi_jU_QH8AD9G5Q=w1393-h678-s-no?authuser=0",
-			"mobile": ""
-		}
-	},
-	{
-		"id": 3,
-		"name": "test-calc-vistegra",
-		"type": "client",
-		"tech": "js, react, css",
-		"github": "https://github.com/stepblazev/test-calc-vistegra",
-		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
-		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/pb429Hl5CVolvL9RGjgWO2bQj00IYjLkEP_4rPxYBCJjzINVlDG-VzE3inlxgJju5QYS2nsbWQFd7wyf5akITqSIKq5_GgHtbrlN3Vh9SMrYgIh9OivX8DfXjxIRZs6tGrhEo9c5W2JQMjr3-sScCSr8helnMdrw20yuwDqHQ0d8BDEJrGOxx5gB6rqQJ5dlUF0mk5thq3KZVx_J72Plj5-h0qQN4iA58Kj80YaarQmJ1BJ3NBQAbPeeKjUnteJa5rReFVs8MROcbM9mIGipViVg1Q2XiE3IylUTz73uILlUJvy1Z3TfsdOWLeROKmz0CnhvqfmCOJzQ__Kge5ITKTYG47QQtU74NiQ1KXVEfigfXEssEKO0rDYGv0FhZMC-0OXguEyPJFiSLrv4JhR-MjscSZv_OOFMeMYc0xZ2cfhlWbSWgofnis_xSLNSD670kt63RrQb_o9Kq_3OiK94r1kfjukUbptUoQ3i_rSNfPRWSu94lwjqW9moIc_gd72n01bOrMzJDA3B3kWnYYYbejKBU4Bn2v_XG_Dm5fyC5c3ZK6lEU3GnMIGXnD0IR4ue1ksHt0l0w5_OPf3PXjPBMpE51MWwYsLgKGTowGH9Iy5zrFrOS4hHIRyjP94IXIfq5he5wayg-MaeOlK5Nb6VmkahnrTKqg1ntjLeMDGoYjbRA9W2sQ9zMg1uOff_j7Q8SA3Zp9Ol4iBXyHXm6N3pu7FWd7MUxN6jYcpLnCgeLQnxAS_ef8aTJGfU20o_ogeCVbF72qDPtJdnBGFrtRllTtXLQkiYpVpguTu80n1Xq0zKfjVBP3-lh4k9eE0LAzc6ZM6yxKWNjLfx3O6C42sTPSO5UsUbYhK_qBf12wxEGs15B19p06yG4iUcEXqrqDuMatSKlbtZFJW6SzkWwfS1PaxjatDvTTdaGHnzj1jTeu4DEl1QQ_POpa3xmyr9tlKJGrmFTO8eK0uPm1H4nw=w1393-h674-s-no?authuser=0",
-			"mobile": ""
-		},
-		"description": {
-			"ru": "Тестовое задание. Калькулятор расчета каркаса с покрытием листов. Приложение взаимодействует с json-базой данных и выполняет вычисления на основе выбранных пользователем материала листов, шириной трубы, типом усиления и т.д.",
-			"en": "Test Assignment. Calculation calculator for a framework with sheet covering. The application communicates with a json database and performs calculations based on user-selected sheet material, pipe width, type of reinforcement, etc."
-		}
-	},
-	{
-		"id": 2,
 		"name": "stopwatch-typescript",
 		"type": "client",
 		"tech": "ts, html, css",
 		"github": "https://github.com/stepblazev/stopwatch-typescript",
 		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
 		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/sTFBYn6Mvb04QQa_m-zMd9JhdGv0kpM0G7fUOEsWriGoUn_rD1gAlYjapTu7ya9V9MtNMrZFSJWfl86ytfebsKTtaYMckx6KCSH_G5hBTIIKz2WU5CHo3jwfvvdWnER1KEEBWr4yR1HKcMPnV388Ups3R3bu5Qxfmfwa-DScjYZE82lg7lHFg6VdWNC74hnSuXM3oSzi7aBmFeUFR2LxoVLKKmmTqF10m1K_4QBASXj30bggsZQaSRD28v-4OcbH1WNo05maBhYKqFKMO2-WfsQ5z2VjbU52OWDW4-jagb0s8cSXy1Nr97g-gfpXbhZbwP094Tq38LmcqjYOOd9TVaJCeS9Ml3M-rCYM7JXupHWVg_OmqjI_L95rLpZQ210_1ZbZ5qb5L7ThPToJcog0NTtbW9Aj8ro93U1i_c9J2zbTuEt6ID0pHz-7IzT25kyIGKJajJvzg3HWI1AEByAlWOZ19TsOkhWsXkK9_Blv7RWgxVMVYACPuRe7pfmg63rG0L53cuVKE9MQiikZ80z84WekyKG6MJfdiCVuIJY1kReyAHH7gJ0K1TDpPI4oYy_u8EH17U0Fr63krjkcFrIxR0JbrpcpPKwYvfLJaTFQsx-xqR7M3Qann5eyBJ0Diw1FW63UA7mAmA5LbcFURU6zYCKdHCF8j9t_ejkrY6-QZbRQFMWP_mZy0duVQlDUcfmcrTP0QWwMoDnuZbAeAsYgIFlgaxbPIHTeYqmwko44npI-Bxzgai9-xZjafmlxdYgL0FxoLSPh9r-p5v1t9r0wqiMYAzWLwDcsELHtYx7jFOLKTz9DJrS3X1Xd7wlIiEeAzRPNDFmEa2nGp1xgPZl7GcAvNT70aiJB4G8pgnwJMWXYT9eI7MjUpGMzdsWjN731ZOdDu0zeAxNnf2A87bUquJa3zjBJOnrKnucUKqZW7_p7hY_KGYHi3EnW0TXYhM1BbhvtD1HI1FM42RyxkA=w1393-h679-s-no?authuser=0",
-			"mobile": ""
-		},
-		"description": {
-			"ru": "Секундомер, дизайн которого был взят у секундомера Windows 10. Данный сайт разрабатывался с использованием TypeScript, но также есть версия написанная на JavaScript.",
-			"en": "A stopwatch whose design was taken from the Windows 10 stopwatch. This site was developed using TypeScript, but there is also a version written in JavaScript."
+			"desktop": "https://lh3.googleusercontent.com/sTFBYn6Mvb04QQa_m-zMd9JhdGv0kpM0G7fUOEsWriGoUn_rD1gAlYjapTu7ya9V9MtNMrZFSJWfl86ytfebsKTtaYMckx6KCSH_G5hBTIIKz2WU5CHo3jwfvvdWnER1KEEBWr4yR1HKcMPnV388Ups3R3bu5Qxfmfwa-DScjYZE82lg7lHFg6VdWNC74hnSuXM3oSzi7aBmFeUFR2LxoVLKKmmTqF10m1K_4QBASXj30bggsZQaSRD28v-4OcbH1WNo05maBhYKqFKMO2-WfsQ5z2VjbU52OWDW4-jagb0s8cSXy1Nr97g-gfpXbhZbwP094Tq38LmcqjYOOd9TVaJCeS9Ml3M-rCYM7JXupHWVg_OmqjI_L95rLpZQ210_1ZbZ5qb5L7ThPToJcog0NTtbW9Aj8ro93U1i_c9J2zbTuEt6ID0pHz-7IzT25kyIGKJajJvzg3HWI1AEByAlWOZ19TsOkhWsXkK9_Blv7RWgxVMVYACPuRe7pfmg63rG0L53cuVKE9MQiikZ80z84WekyKG6MJfdiCVuIJY1kReyAHH7gJ0K1TDpPI4oYy_u8EH17U0Fr63krjkcFrIxR0JbrpcpPKwYvfLJaTFQsx-xqR7M3Qann5eyBJ0Diw1FW63UA7mAmA5LbcFURU6zYCKdHCF8j9t_ejkrY6-QZbRQFMWP_mZy0duVQlDUcfmcrTP0QWwMoDnuZbAeAsYgIFlgaxbPIHTeYqmwko44npI-Bxzgai9-xZjafmlxdYgL0FxoLSPh9r-p5v1t9r0wqiMYAzWLwDcsELHtYx7jFOLKTz9DJrS3X1Xd7wlIiEeAzRPNDFmEa2nGp1xgPZl7GcAvNT70aiJB4G8pgnwJMWXYT9eI7MjUpGMzdsWjN731ZOdDu0zeAxNnf2A87bUquJa3zjBJOnrKnucUKqZW7_p7hY_KGYHi3EnW0TXYhM1BbhvtD1HI1FM42RyxkA=w1393-h679-s-no?authuser=0"
 		}
 	},
 	{
-		"id": 6,
-		"name": "photostock-api",
-		"type": "server",
-		"tech": "node, express, jwt, sql",
-		"github": "https://github.com/stepblazev/photostock-api",
+		"id": 2,
+		"name": "test-calc-vistegra",
+		"type": "client",
+		"tech": "js, react, css",
+		"github": "https://github.com/stepblazev/test-calc-vistegra",
+		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
 		"preview": {
-			"desktop": "https://lh3.googleusercontent.com/Pz-26uJy-t03lQHrxeiawujaek3m74bCZ00D3VLZesFH-FMn5Xgkp_xC6dPNTBqp1VRUnqp4zwzhJMNnLnCgrY9zvP5yzpa8OO3-k_JLapLSus-GAlJnGVsLfd_CwyvglwvzwFzznPv-CX5Yy6qSV--4Sbw9TsziUGL1QAaTpuSJmarx-v4O7LPaNCXRkzjyRqVe-A0ZMQORTSbZlvHDU47nrW4uNTpIyIeVB39ua1-kgjiibd3anVBj2FgyU4Kc2qb__crUZRtkTcGAG1WkVi6CubnvNT7uUX8oVQ9o7EP-0NWzcmUwdmIkqTUEz0VV4Xf2FKHP3nE8eIs5slPzG-7bdHFnjMrst8cpQ9g_wjvB9RJaB1dZJ4GpkQ0gDhAVlKLwidlFKYc6Wo1BwwKfzNjkQAihovQPQQ54Qbj_HdTPsee9lds-D4DgRo9e_5ZlOs4Lde9RGCkqRQiNCP3w-vIMWau-opaGiV7RaA2q4VqRQzPGK797CKNxbel0caOQxfGeh9TrJOmLPfYZSBIlcR0iw73Mc5DPMYP3qNdAeatvjwGDWmAMhpWy5-VnGs30ywom87s_E9d2qAE2oDQQHf6zMe7x88Z6fbgZoOWr2tQ208ccMskqGJrpv84ru5M1tetiXBcSp8hhVGqfyuo6fO9s58fEUhwVikOfrZfIndMTxFCLJ4kpH22kZWVuUPUE4llaUi2NY-MjPAfWnV7uuGLna7rafn1UsxlZ4XmM8oqMTRQjAm-_a0_GIqWfn23m2Q69YwJRk3QO-Ce6_irXC563GQmEV1dnhXxI0XzdO5TEy-zmeVDr10hPsVWPexzuWZ_dr1hHrZW6XwAwhCeGboOUACGNXO_6s6OGEp47OoP_qDiGrudl2CcGSGmREleBX6vFlxfPQjTqdtesQ1ptFMqmuVYCN2PZpZgk9wp9fku3wi2VmbbjYuVEkriGgIB5TBW55oz5kxO56oemOw=w790-h434-s-no?authuser=0"
-		},
-		"description": {
-			"ru": "Данный проект на Node.js использует фреймворк Express для создания серверной части приложения. Для хранения данных используется PostgreSQL.Проект реализует систему авторизации с использованием JWT-токенов и cookies. Он обрабатывает изображения, полученные от клиента, и хранит их на сервере. В целом, проект предоставляет возможность клиентам загружать изображения на сервер, а также обрабатывать их на серверной стороне. Система авторизации и работа с базой данных обеспечивают безопасность и эффективность работы приложения.",
-			"en": "This Node.js project uses the Express framework to create the server side of the application. It uses PostgreSQL to store data.The project implements an authorization system using JWT tokens and cookies. It processes the images received from the client and stores them on the server. In general, the project allows clients to upload images to the server and process them on the server side. The authorization system and database handling ensure the security and efficiency of the application."
+			"desktop": "https://lh3.googleusercontent.com/pb429Hl5CVolvL9RGjgWO2bQj00IYjLkEP_4rPxYBCJjzINVlDG-VzE3inlxgJju5QYS2nsbWQFd7wyf5akITqSIKq5_GgHtbrlN3Vh9SMrYgIh9OivX8DfXjxIRZs6tGrhEo9c5W2JQMjr3-sScCSr8helnMdrw20yuwDqHQ0d8BDEJrGOxx5gB6rqQJ5dlUF0mk5thq3KZVx_J72Plj5-h0qQN4iA58Kj80YaarQmJ1BJ3NBQAbPeeKjUnteJa5rReFVs8MROcbM9mIGipViVg1Q2XiE3IylUTz73uILlUJvy1Z3TfsdOWLeROKmz0CnhvqfmCOJzQ__Kge5ITKTYG47QQtU74NiQ1KXVEfigfXEssEKO0rDYGv0FhZMC-0OXguEyPJFiSLrv4JhR-MjscSZv_OOFMeMYc0xZ2cfhlWbSWgofnis_xSLNSD670kt63RrQb_o9Kq_3OiK94r1kfjukUbptUoQ3i_rSNfPRWSu94lwjqW9moIc_gd72n01bOrMzJDA3B3kWnYYYbejKBU4Bn2v_XG_Dm5fyC5c3ZK6lEU3GnMIGXnD0IR4ue1ksHt0l0w5_OPf3PXjPBMpE51MWwYsLgKGTowGH9Iy5zrFrOS4hHIRyjP94IXIfq5he5wayg-MaeOlK5Nb6VmkahnrTKqg1ntjLeMDGoYjbRA9W2sQ9zMg1uOff_j7Q8SA3Zp9Ol4iBXyHXm6N3pu7FWd7MUxN6jYcpLnCgeLQnxAS_ef8aTJGfU20o_ogeCVbF72qDPtJdnBGFrtRllTtXLQkiYpVpguTu80n1Xq0zKfjVBP3-lh4k9eE0LAzc6ZM6yxKWNjLfx3O6C42sTPSO5UsUbYhK_qBf12wxEGs15B19p06yG4iUcEXqrqDuMatSKlbtZFJW6SzkWwfS1PaxjatDvTTdaGHnzj1jTeu4DEl1QQ_POpa3xmyr9tlKJGrmFTO8eK0uPm1H4nw=w1393-h674-s-no?authuser=0"
+		}
+	},
+	{
+		"id": 3,
+		"name": "landing-techno-teal",
+		"type": "client",
+		"tech": "html, css, js, gulp",
+		"github": "https://github.com/stepblazev/landing-techno-teal",
+		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
+		"preview": {
+			"desktop": "https://lh3.googleusercontent.com/BrPzaPhTsj3B49e3IO4YDDMhXNcSgI-AMq5nT-FupN4Qv0PhMBk5qmmR9IwAexuRbUn3jOJVHl814tsbfM7L1J-wTr1xFNHApFhb80tpvS-zKtG0PIeRSu74u8KFk-58-SOFOiY_-co5qXMcaIEI4dGNoso8jzVu3f4-qsg16GSDSVZTkmyen8ZA1WvU1gxdtK6lr6spZ4jNxtgS6TNPLNbaNYWbLIVZIJmS9-g3tMf9TaJTX4wC7TMrNPB3MM1QASfp005DZoIQ0Tc1exZ4M2j45rVGbZ-9u07IubiOgc28ZtxCH4deUSq1I5DKqN9hBnmJj97VL09Z2Q-By2mTXXUywcub8uLPm0BsMsfOkWWGyXTJ5uvtl78ryS1SpQZAWlo6cBniMAOE-ICaFfQDPjJEO6hr2FZhsoWgne2ZZEvel6T1TS4qMnigc7PnBdLeewDabSzR4ui7AHTyVqGOKZ8EhisBuslrXvWNKHO0_FVCb77RNJVGF6ohPRMLlBa37jWQvSiGXYknNhoMqhi4hBdRg-cIpn-Vp5qNm7Qrw2cufogbeWrsnekCoaj4-x-I3NYWupFrBUCKtqEeHWTjYgcX5uqK0YqOHw-G3Og0cY575OxSYHZJ2MG7n_Lw3Q6J1awMueU0Y9trc_ISc92DyBdPZF7QUJ92PfLTNzVlwB4O7nWV3BnfS72AKbm-f3FJvklb_lUPtBOuWh79h9ZPa8Yy_L5vVAZneje8xPPXEGuJcF0kXX84E74EHiq8jFRwuklsFqXaT_nU2nHaNcIAGIpP4TzEn7pE6zyG0kzoeZOJUsYQlMux9JqsT-BmoKnXCSOg5ohSwTfdaGMwgtCFQhRHDgbiq7qZeCj4b4Z6C58kpc3S_f9IzO4GmPgOVYk5LqKYFrRrPIRahB9Raoa7OXUz3ik4jGOKnaGZUxKtoriUpfxlGO7BRY04s3jfh411oPLFi_jU_QH8AD9G5Q=w1393-h678-s-no?authuser=0"
+		}
+	},
+	{
+		"id": 4,
+		"name": "sbv-website",
+		"type": "client",
+		"tech": "js, react, css",
+		"github": "https://github.com/stepblazev/sbv-website",
+		"preview": {
+			"desktop": "https://lh3.googleusercontent.com/F5x_HXkk3ZkE8zuxQKsizv2BA3w_4aMaghI4gcZqpSH0YmNszcrwxQ5-9TQku1wVoBVodLQ2t5kReryYspBgRd9s5ceF9DPs581PHydqGKxaNj8XeqV_umoWaysX7ymm1jYf31uv_kv7K9iz4oynKZkbII-gdo1Rts3WmO1I6RVihuWyn-Q1NkLPOyIweiW67SiQmeYFRFMwj3vb5vn1DF6XhtbfB3Mgofmhrv-x3_8pUa3yPeGITxybw_VVobATPX2BUzXHcP2WN0-DTA_SXyFueOll48meVyS-dcb-meuF4-AEuXsuWBeuaPdA7DMQ_-nqCFxUGUSRjOsyS8Yc2cf_PrN2Wj6dDM8BFDljdDNsSMlewl8JQGbJYc03UX4qwha9l62zIF5-cFPKY3-ZQwybrNF-j2GRBbASPYuwfbLBnJFM9ZCoa6BjETUomtUSag1AmJdFtJ_aV_WiyFQbELyTC-oGB2sMDWwc5UwmiCYFepSdNTHlPDTF_tW-UsTVf7ik43k2tL9-qfqzN8kD8rQR-EYQKm14j-NamLMm0pYVVhFbf9IYj5waJ2ZEkrQNL1NVaG5T1ezrjn0keapRzP4lm3J6Cs_N8Ip9LmC_ptyT7Y9fUnuqHv5egEfOOR1ecUUDvsghnGmDjclFOqkFrfAE3URKm0qmlPhrvYB4N-XV7_dryc756e_sqFj6gv3TMJa-jdjTUj6t5ednQD19-nRCJ7RjKJt8hjYnv6MI96jwJfyE6_7xvxQo9VukNb6xSAN_TH9dMrazVZdlpnSuAB7myh2_yUysUYh3siSxizj2KXHv5y94QuG-xUC8jW0bFf07gvI1ksrpAkP8gGkueJgU7PCy8BRvYu0QMB3Z5VSSPHxvbagFNRPCjZ1ktaGiC7hQR_FemQpwo0uqaOmhpxuwV2v1vUbRmGNEW_vKYD-nMtZBm1LCOAo1Rv19R-1yd2tIVDiBZcBYAQTazg=w1393-h675-s-no?authuser=0"
 		}
 	}
 ]

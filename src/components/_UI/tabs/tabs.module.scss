@@ -22,16 +22,14 @@
 		input[type='radio'] + label {
 			padding: 10px;
 			display: block;
-			border-radius: 15px 15px 0 0;
-			border: 2px solid $light;
-			border-bottom: none;
+			border-radius: 5px;
 			background-color: rgba(0, 0, 0, 0.15);
 			text-align: center;
-			transition: none;
 			cursor: pointer;
 		}
 		input[type='radio']:checked + label {
 			font-weight: 700;
+			outline: 2px solid $light;
 			background-color: transparent;
 		}
 	}

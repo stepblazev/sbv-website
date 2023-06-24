@@ -6,8 +6,8 @@ import en from '../assets/locales/english.json';
 i18next
     .use(initReactI18next)
     .init({
-        lng: localStorage.getItem('language') ?? 'ru', // default language
-        fallbackLng: 'ru', // if the current language is not avalible
+        lng: localStorage.getItem('language') ?? 'ru',
+        fallbackLng: 'ru',
         resources: {
             ru: {
                 translation: ru,
