@@ -13,20 +13,8 @@ export default function Projects() {
 	const { t } = useTranslation();
 	const { isDark } = useContext(themeContext);
 
-	const [clientProjects, setClientProjects] = useState(
-		projectsJSON.filter((p) => p.type === 'client')
-	);
-	const [serverProjects, setServerProjects] = useState(
-		projectsJSON.filter((p) => p.type === 'server')
-	);
-
-	// const setDemo = (e) => {
-	// 	if (e.target.checked) {
-	// 		setClientProjects((prev) => prev.filter((p) => p.hasOwnProperty('ghPages')));
-	// 	} else {
-	// 		setClientProjects(projectsJSON.filter((p) => p.type === 'client'));
-	// 	}
-	// };
+	const clientProjects = projectsJSON.filter((p) => p.type === 'client');
+	const serverProjects = projectsJSON.filter((p) => p.type === 'server');
 
 	return (
 		<FadeIn>
@@ -42,21 +30,7 @@ export default function Projects() {
 					data={[
 						{
 							title: t('pages.projects.client'),
-							element: (
-								<>
-									{/* <div className={classes.demo}>
-										<input
-											type='checkbox'
-											id='demo'
-											onChange={setDemo}
-										/>
-										<label htmlFor='demo'>
-											{t('pages.projects.onlyDemo')}
-										</label>
-									</div> */}
-									<ProjectList projects={clientProjects} />
-								</>
-							),
+							element: <ProjectList projects={clientProjects} />,
 						},
 						{
 							title: t('pages.projects.server'),

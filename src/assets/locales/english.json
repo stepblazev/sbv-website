@@ -10,25 +10,28 @@
 	"pages": {
 		"home": {
 			"links": {
-				"resume": "My resume",
-				"github": "My GitHub",
-				"projects": "My projects"
+				"resume": "Resume",
+				"projects": "Projects",
+				"feedback": "Feedback"
 			},
 			"welcome": {
 				"p1": "Welcome to my website! My name is <b>Eugene Ohvatuk (nickname SBV)</b> and I've been doing web development for more than a year. My main technology stack is React. I try to create web applications that are beautiful, easy to use and as efficient as possible.",
 				"p2": "On this website I present my work and experiments in web development. Here you can read about my projects and learn more about how I work.",
-				"p3": "Be assured that no personal information is collected on my site. If you have any questions, feel free to contact me by email <b>ohvatuki@gmail.com</b>.",
+				"p3": "Be assured that no personal information is collected on my site. If you have any questions, feel free to contact me by email <b>ohvatuki@gmail.com</b> or via the feedback form.",
 				"p4": "Thanks for visiting my site, I hope you find a lot of interesting things here!"
 			}
 		},
 		"resume": {
 			"title": "Resume",
 			"content": {
-				"p1": "My name is Eugene Ohvatuk, and at the moment I'm finishing my college studies in the field of IT software. Web development I started more than a year ago and during this time I have some experience in this area.",
-				"p2": "I am proficient in <b>HTML, CSS (as well as the SASS preprocessor) and JavaScript, including ES6 syntax</b>. In the last six months I've been writing applications using <b>React and Redux libraries</b>. I am constantly improving my skills and am currently learning <b>TypeScript</b>.",
-				"p3": "However, my work is not limited to the frontend. I also have experience with the server side of applications using <b>Node.js and the Express framework</b>. I am also familiar with <b>SQL</b>, and I have experience creating databases and running SQL queries (I used <b>PostgreSQL</b> for my purposes).",
-				"p4": "I'm ready to apply my knowledge and web development skills to new projects and continue my professional growth. I'm looking for a Frontend Developer position with a company where I can gain new experience and learn more about modern web development technologies. I look forward to discussing my qualification and joining your team."
+				"p1": "I have a specialized secondary education (Information Technology Software). For one and a half years I am actively involved in web development, and during this time I have gained considerable experience in this area.",
+				"p2": "I am proficient in <b>HTML, CSS (as well as the SASS preprocessor) and JavaScript, including ES6 syntax</b>. In the last six months I've been writing applications in <b>TypeScript</b> using <b>React and Redux TK</b> libraries. I am constantly improving my skills and learning new things.",
+				"p3": "However, my work is not limited to the frontend. I also have experience with the server side of applications using <b>Node.js</b> and the <b>Express</b> framework. I am also familiar with <b>SQL</b>, and I have experience with databases (I used <b>PostgreSQL</b> for my purposes).",
+				"p4": "I am ready to apply my knowledge and web development skills to new projects and continue my professional growth. I am looking for a <b>Frontend</b> Developer position with a company where I can gain new experience and learn more about modern technologies. I look forward to discussing my qualification and joining your team."
 			}
+		},
+		"feedback": {
+			"title": "Feedback"
 		},
 		"projects": {
 			"title": "Projects",
@@ -38,11 +41,7 @@
 			"hide": "hide",
 			"client": "Client",
 			"server": "Server",
-			"onlyDemo": "Only demo",
-			"content": {}
-		},
-		"404": {
-			"message": "Error. This page does not exist."
+			"onlyDemo": "Only demo"
 		}
 	},
 	"back-home": "Home page"

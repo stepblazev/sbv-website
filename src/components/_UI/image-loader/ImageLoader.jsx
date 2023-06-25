@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Loader from '../_UI/loader/Loader';
+import Loader from '../loader/Loader';
 import classes from './image-loader.module.scss';
 
 export default function ImageLoader({ src, position }) {

@@ -6,7 +6,7 @@ import { AiOutlineFileDone } from 'react-icons/ai';
 import Skills from './skills/Skills';
 import FadeIn from '../../animations/FadeIn';
 import SlideIn from '../../animations/SlideIn';
-import ImageLoader from '../../components/image-loader/ImageLoader';
+import ImageLoader from '../../components/_UI/image-loader/ImageLoader';
 import user from '../../assets/images/coming-soon-person.webp';
 import classes from './resume.module.scss';
 

@@ -2,8 +2,8 @@ import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
-import { skillDictionary } from '../../../components/export-skills/ExportSkills';
-import ImageLoader from '../../../components/image-loader/ImageLoader';
+import { skillDictionary } from '../../../skills/Skills';
+import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {

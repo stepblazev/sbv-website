@@ -119,7 +119,6 @@ $margin: 10px;
 	}
 
 	&Image {
-		float: left;
 		margin-right: $margin;
 		position: relative;
 		top: -95px;
@@ -131,16 +130,18 @@ $margin: 10px;
 	}
 
 	&Text {
-		flex-grow: 1;
 		margin-top: 10px;
 
 		p {
 			word-wrap: break-word;
 			margin-bottom: 10px;
-			text-align: left;
+			text-align: justify;
 
 			@media (max-width: 500px) {
 				font-size: 14px;
+			}
+			@media (max-width: 800px) {
+				text-align: left;
 			}
 		}
 	}

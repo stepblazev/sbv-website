@@ -1,4 +1,4 @@
-import Layout from './components/Layout';
+import Layout from './components/layout/Layout';
 import ThemeProvider from './components/ThemeProvider';
 import RouteProvider from './router/RouteProvider';
 

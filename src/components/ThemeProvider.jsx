@@ -13,8 +13,6 @@ export default function ThemeProvider({ children }) {
 	}, []);
 
 	return (
-		<themeContext.Provider value={{ isDark, toggleTheme }}>
-			{children}
-		</themeContext.Provider>
+		<themeContext.Provider value={{ isDark, toggleTheme }}>{children}</themeContext.Provider>
 	);
 }

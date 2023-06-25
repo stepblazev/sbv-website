@@ -23,7 +23,7 @@ export default function FixedLinks() {
 	return (
 		<div className={isDark ? classes.fixed_dark : classes.fixed_light}>
 			{links.map((l) => (
-				<a key={l.link} href={l.link}>
+				<a key={l.link} href={l.link} target='_blank'>
 					<l.Svg />
 				</a>
 			))}

@@ -11,7 +11,7 @@ import {
 } from 'react-icons/si';
 import { TbBrandRedux } from 'react-icons/tb';
 import { FaReact, FaGulp } from 'react-icons/fa';
-import classes from './export-skills.module.scss';
+import classes from './skills.module.scss';
 
 export const skillDictionary = {
 	html: <Html />,
