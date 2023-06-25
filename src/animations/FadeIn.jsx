@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useSpring, animated, easings } from 'react-spring';
 
 export default function FadeIn({ children }) {
