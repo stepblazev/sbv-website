@@ -1,34 +1,27 @@
-import { useState } from 'react';
+import { AiOutlineSend } from 'react-icons/ai';
 import classes from './feedback-form.module.scss';
 
 export default function FeedbackForm() {
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-
 	const onSubmit = (e) => {
 		e.preventDefault();
 	};
 
-	const emailChange = (e) => {
-		setEmail(e.target.value);
-	};
-
-	const messageChange = (e) => {
-		setMessage(e.target.value);
-	};
-
+	// USING "formspree" service
 	return (
-		<form className={classes.form} onSubmit={onSubmit}>
-			<div className={classes.form__email}>
-				<h2>Ваш адрес электронной почты</h2>
-				<input type='text' placeholder='E-mail' value={email} onChange={emailChange} />
-			</div>
-			<div className={classes.form__message}>
+		<form action='https://formspree.io/f/meqbjgjn' method='POST' className={classes.form}>
+			<label className={classes.form__email}>
+				<h2>Ваш E-Mail</h2>
+				<input required type='email' name='email' placeholder='E-mail' />
+			</label>
+			<label className={classes.form__message}>
 				<h2>Ваше сообщение</h2>
-				<textarea placeholder='Ваше сообщение' value={message} onChange={messageChange} />
-			</div>
+				<textarea required name='message' placeholder='Сообщение' />
+			</label>
 			<div className={classes.form__controls}>
-				<button type='submit'>Отправить</button>
+				<button type='submit'>
+					<span>Отправить</span>
+					<AiOutlineSend />
+				</button>
 			</div>
 		</form>
 	);
