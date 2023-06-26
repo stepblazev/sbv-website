@@ -19,7 +19,8 @@ export default function Projects() {
 			<PageContainer>
 				<div className={classes.projects}>
 					<PageHeader title={t('pages.projects.title')} SVG={AiOutlineFolderOpen} />
-					<Tabs
+					<ProjectList projects={projectsJSON} />
+					{/* <Tabs
 						data={[
 							{
 								title: t('pages.projects.client'),
@@ -30,7 +31,7 @@ export default function Projects() {
 								element: <ProjectList projects={serverProjects} />,
 							},
 						]}
-					/>
+					/> */}
 				</div>
 			</PageContainer>
 		</FadeIn>

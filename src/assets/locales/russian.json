@@ -31,7 +31,12 @@
 			}
 		},
 		"feedback": {
-			"title": "Связь"
+			"title": "Связь",
+			"email": "Ваш E-Mail",
+			"email_placeholder": "E-Mail",
+			"message": "Ваше сообщение",
+			"message_placeholder": "Сообщение",
+			"send": "Отправить"
 		},
 		"projects": {
 			"title": "Проекты",

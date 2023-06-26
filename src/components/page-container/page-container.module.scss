@@ -12,11 +12,18 @@
 	-moz-box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
 	box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
 
+	a {
+		color: $light;
+		fill: $light;
+		text-decoration: none;
+	}
+
 	@media (max-width: 600px) {
 		border-radius: 0;
-		width: calc(100% + $container_padding * 2);
+		width: 100vw;
 		margin-left: -$container_padding;
 		margin-right: -$container_padding;
+		margin-bottom: 0;
 	}
 }
 
@@ -26,4 +33,9 @@
 	color: $dark;
 	fill: $dark;
 	border-color: $dark;
+
+	a {
+		color: $dark;
+		fill: $dark;
+	}
 }

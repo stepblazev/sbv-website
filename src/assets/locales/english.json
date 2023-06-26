@@ -31,7 +31,12 @@
 			}
 		},
 		"feedback": {
-			"title": "Feedback"
+			"title": "Feedback",
+			"email": "Your E-Mail",
+			"email_placeholder": "E-Mail",
+			"message": "Your message",
+			"message_placeholder": "Message",
+			"send": "Send"
 		},
 		"projects": {
 			"title": "Projects",
