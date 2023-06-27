@@ -1,6 +1,6 @@
 .image {
 	height: 100%;
-	min-width: 100px;
+	width: 100%;
 	position: relative;
 	background-color: #ffffff;
 
@@ -8,13 +8,12 @@
 		height: 100%;
 		width: 100%;
 		transition: all 0.3s ease;
+		object-fit: cover;
 	}
 }
 
 .loader {
-	width: 100%;
-	min-height: 200px;
-	position: relative;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

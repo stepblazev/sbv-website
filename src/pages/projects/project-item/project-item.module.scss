@@ -43,11 +43,9 @@
 
 	&Images {
 		border-radius: 7px;
-		// height: 320px;
 		overflow: hidden;
 
 		@media (max-width: 600px) {
-			// height: 200px;
 		}
 	}
 

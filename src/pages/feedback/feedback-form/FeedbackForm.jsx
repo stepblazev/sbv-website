@@ -1,4 +1,7 @@
 import { AiOutlineSend } from 'react-icons/ai';
+import { FiMail } from 'react-icons/fi';
+import { RiMessage2Line } from 'react-icons/ri';
+import { BiMessageDetail } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { themeContext } from '../../../other/themeContext';
@@ -12,7 +15,10 @@ export default function FeedbackForm() {
 	return (
 		<form action='https://formspree.io/f/meqbjgjn' method='POST' className={classes.form}>
 			<label className={!isDark ? classes.form__email : classes.form__email_dark}>
-				<h2>{t('pages.feedback.email')}</h2>
+				<h2>
+					<FiMail />
+					{t('pages.feedback.email')}
+				</h2>
 				<input
 					required
 					type='email'
@@ -21,7 +27,10 @@ export default function FeedbackForm() {
 				/>
 			</label>
 			<label className={!isDark ? classes.form__message : classes.form__message_dark}>
-				<h2>{t('pages.feedback.message')}</h2>
+				<h2>
+					<BiMessageDetail />
+					{t('pages.feedback.message')}
+				</h2>
 				<textarea
 					required
 					name='message'
