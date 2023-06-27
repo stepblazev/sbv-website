@@ -2,14 +2,13 @@
 
 .item {
 	padding: 10px;
-	border-radius: 7px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 
-	-webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	// -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	// -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	// box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
 
 	&Name {
 		text-transform: uppercase;
@@ -22,7 +21,8 @@
 
 	&Links {
 		display: flex;
-		justify-content: space-between;
+		gap: 10px;
+		// justify-content: space-between;
 		a {
 			padding: 5px;
 			display: flex;
@@ -43,7 +43,7 @@
 	}
 
 	&Images {
-		border-radius: 7px;
+		border-radius: 5px;
 		overflow: hidden;
 		height: 320px;
 		width: 100%;

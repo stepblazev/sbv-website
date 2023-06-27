@@ -3,11 +3,11 @@ import { AiOutlineFileDone } from 'react-icons/ai';
 import Skills from './skills/Skills';
 import SlideIn from '../../animations/SlideIn';
 import ImageLoader from '../../components/_UI/image-loader/ImageLoader';
-import user from '../../assets/images/coming-soon-person.webp';
+import user from '../../assets/images/no-avatar.png';
 import PageHeader from '../../components/page-header/PageHeader';
-import classes from './resume.module.scss';
 import FadeIn from '../../animations/FadeIn';
 import PageContainer from '../../components/page-container/PageContainer';
+import classes from './resume.module.scss';
 
 export default function Resume() {
 	const { t } = useTranslation();

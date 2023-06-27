@@ -4,6 +4,7 @@ import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
 import { skillDictionary } from '../../../skills/Skills';
 import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
+import noImage from '../../../assets/images/image-not-found.png';
 import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {
@@ -26,10 +27,7 @@ export default function ProjectItem({ project }) {
 			</div>
 			{Boolean(project.preview) && (
 				<div className={classes.itemImages}>
-					<ImageLoader
-						position={project.type === 'client' ? 'top' : 'center'}
-						src={project.preview.desktop}
-					/>
+					<ImageLoader src={noImage ?? project.preview.desktop} />
 				</div>
 			)}
 			{Boolean(project.tech) && (
