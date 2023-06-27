@@ -22,7 +22,6 @@
 	&Links {
 		display: flex;
 		gap: 10px;
-		// justify-content: space-between;
 		a {
 			padding: 5px;
 			display: flex;
@@ -43,19 +42,18 @@
 	}
 
 	&Images {
-		border-radius: 5px;
+		border-radius: 7px;
+		// height: 320px;
 		overflow: hidden;
-		height: 320px;
-		width: 100%;
 
 		@media (max-width: 600px) {
-			height: 200px;
+			// height: 200px;
 		}
 	}
 
 	&Tech {
 		display: flex;
-		justify-content: center;
+		align-items: center;
 		flex-wrap: wrap;
 		column-gap: 20px;
 		row-gap: 10px;

@@ -1,6 +1,14 @@
 .list {
 	margin-top: 20px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 20px;
+
+	& > div {
+		flex-basis: 48%;
+		@media (max-width: 720px) {
+			flex-basis: 100%;
+		}
+	}
 }
