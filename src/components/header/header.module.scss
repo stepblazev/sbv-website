@@ -1,16 +1,28 @@
 @import '../../styles/variables';
 
-.header {
+.header_dark {
 	padding: 20px 0;
 	position: relative;
 	z-index: 1000;
-	&Content {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+
 	@media (max-width: 600px) {
 		padding: 10px 0;
+		position: sticky;
 		top: 0;
+		background-color: $dark;
+		border-bottom: 1px solid $light;
 	}
+}
+
+.header_light {
+	@extend .header_dark;
+	@media (max-width: 600px) {
+		background-color: $white;
+	}
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
