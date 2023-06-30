@@ -36,7 +36,7 @@ export default function Resume() {
 												: classes.avatar__years_light
 										}
 									>
-										19 лет
+										{t('pages.resume.age')}
 									</div>
 								</div>
 							</SlideIn>

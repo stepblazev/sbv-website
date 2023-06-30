@@ -16,8 +16,9 @@ export default function ProjectItem({ project }) {
 		const loadImage = async () => {
 			if (!project.preview) return;
 			try {
-				const image = await import(`../../../assets/images/${project.preview}`);
-				setPreviewSource(image.default);
+				// const image = await import(`../../../assets/images/${project.preview}`);
+				// setPreviewSource(image.default);
+				setPreviewSource(project.preview);
 			} catch (error) {
 				console.error('Failed to load preview:', error);
 			}

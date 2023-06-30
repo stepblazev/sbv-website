@@ -1,35 +1,39 @@
 [
 	{
 		"id": 1,
-		"name": "stopwatch-typescript",
-		"type": "client",
-		"tech": "ts, html, css",
+		"name": "computer-store",
+		"tech": "ts, react, css, axios, redux",
 		"github": "https://github.com/stepblazev/stopwatch-typescript",
 		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
-		"preview": "stopwatch-typescript.png"
+		"preview": "//live.staticflickr.com/65535/53013858618_fd50d23552_h.jpg"
 	},
 	{
 		"id": 2,
-		"name": "test-calc-vistegra",
-		"type": "client",
-		"tech": "js, react, css",
-		"github": "https://github.com/stepblazev/test-calc-vistegra",
-		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
-		"preview": "test-calc-vistegra.png"
+		"name": "stopwatch-typescript",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/stopwatch-typescript",
+		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
+		"preview": "//live.staticflickr.com/65535/53013858593_06dcd28f36_h.jpg"
 	},
 	{
 		"id": 3,
-		"name": "landing-techno-teal",
-		"type": "client",
-		"tech": "html, css, js, gulp",
-		"github": "https://github.com/stepblazev/landing-techno-teal",
-		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
-		"preview": "landing-techno-teal.png"
+		"name": "test-calc-vistegra",
+		"tech": "js, react, css",
+		"github": "https://github.com/stepblazev/test-calc-vistegra",
+		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
+		"preview": "//live.staticflickr.com/65535/53013756750_bca9b88a0b_h.jpg"
 	},
 	{
 		"id": 4,
+		"name": "landing-techno-teal",
+		"tech": "html, css, js, gulp",
+		"github": "https://github.com/stepblazev/landing-techno-teal",
+		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
+		"preview": "//live.staticflickr.com/65535/53013378441_20839af5fb_h.jpg"
+	},
+	{
+		"id": 5,
 		"name": "sbv-website",
-		"type": "client",
 		"tech": "js, react, css",
 		"github": "https://github.com/stepblazev/sbv-website",
 		"ghPages": "https://stepblazev.github.io/sbv-website/"
