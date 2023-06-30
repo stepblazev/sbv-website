@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
@@ -9,6 +9,21 @@ import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {
 	const { t } = useTranslation();
+
+	const [previewSource, setPreviewSource] = useState(noImage);
+
+	useEffect(() => {
+		const loadImage = async () => {
+			if (!project.preview) return;
+			try {
+				const image = await import(`../../../assets/images/${project.preview}`);
+				setPreviewSource(image.default);
+			} catch (error) {
+				console.error('Failed to load preview:', error);
+			}
+		};
+		loadImage();
+	});
 
 	return (
 		<div className={classes.item}>
@@ -25,11 +40,9 @@ export default function ProjectItem({ project }) {
 					</a>
 				)}
 			</div>
-			{Boolean(project.preview) && (
-				<div className={classes.itemImages}>
-					<ImageLoader src={noImage ?? project.preview.desktop} />
-				</div>
-			)}
+			<div className={classes.itemImages}>
+				<ImageLoader src={previewSource} />
+			</div>
 			{Boolean(project.tech) && (
 				<div className={classes.itemTech}>
 					{project.tech.split(',').map((t) => (

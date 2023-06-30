@@ -5,11 +5,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-
-	// -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-	// -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-	// box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-
 	&Name {
 		text-transform: uppercase;
 		font-size: 20px;
@@ -18,10 +13,10 @@
 			font-size: 16px;
 		}
 	}
-
 	&Links {
 		display: flex;
 		gap: 10px;
+
 		a {
 			padding: 5px;
 			display: flex;
@@ -40,13 +35,11 @@
 			}
 		}
 	}
-
 	&Images {
+		position: relative;
+		aspect-ratio: 16 / 9;
 		border-radius: 7px;
 		overflow: hidden;
-
-		@media (max-width: 600px) {
-		}
 	}
 
 	&Tech {

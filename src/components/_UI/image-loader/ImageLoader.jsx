@@ -16,7 +16,11 @@ export default function ImageLoader({ src }) {
 					<Loader />
 				</div>
 			)}
-			<img src={src} onLoad={handleImageLoad} style={{ opacity: loaded ? '1' : '0' }} />
+			<img
+				src={src}
+				onLoad={handleImageLoad}
+				style={{ opacity: loaded ? '1' : '0', transition: 'all 0.3s ease' }}
+			/>
 		</div>
 	);
 }

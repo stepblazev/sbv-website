@@ -7,10 +7,13 @@ import user from '../../assets/images/no-avatar.png';
 import PageHeader from '../../components/page-header/PageHeader';
 import FadeIn from '../../animations/FadeIn';
 import PageContainer from '../../components/page-container/PageContainer';
+import { useContext } from 'react';
+import { themeContext } from '../../other/themeContext';
 import classes from './resume.module.scss';
 
 export default function Resume() {
 	const { t } = useTranslation();
+	const { isDark } = useContext(themeContext);
 
 	return (
 		<FadeIn>
@@ -26,6 +29,15 @@ export default function Resume() {
 							<SlideIn delay={250}>
 								<div className={classes.avatar}>
 									<ImageLoader src={user} />
+									<div
+										className={
+											isDark
+												? classes.avatar__years_dark
+												: classes.avatar__years_light
+										}
+									>
+										19 лет
+									</div>
 								</div>
 							</SlideIn>
 							<SlideIn delay={500}>

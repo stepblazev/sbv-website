@@ -52,9 +52,11 @@ $margin: 10px;
 	margin-bottom: $margin;
 	width: 200px;
 	height: 200px;
+	position: relative;
 	border-radius: 10px;
 	border-width: 3px;
 	border-style: solid;
+	transition: all 0.3s ease;
 	overflow: hidden;
 
 	@media (max-width: 500px) {
@@ -63,10 +65,28 @@ $margin: 10px;
 		margin-bottom: 0;
 		border-radius: 10px 10px 0 0;
 	}
+
+	.avatar__years_dark {
+		padding: 3px 7px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: inline-block;
+		border-radius: 5px 0 0 0;
+		font-weight: 600;
+		color: $dark;
+		background-color: $white;
+	}
+
+	.avatar__years_light {
+		@extend .avatar__years_dark;
+		color: $white;
+		background-color: $dark;
+	}
 }
 
 .content {
-	padding-left: 30px;
+	padding-left: 20px;
 	display: flex;
 
 	@media (max-width: 800px) {
@@ -75,7 +95,7 @@ $margin: 10px;
 	}
 
 	&Image {
-		margin-right: $margin;
+		margin-right: 20px;
 		position: relative;
 		top: -95px;
 
@@ -89,7 +109,6 @@ $margin: 10px;
 		margin-top: 10px;
 
 		p {
-			word-wrap: break-word;
 			margin-bottom: 10px;
 			text-align: justify;
 
