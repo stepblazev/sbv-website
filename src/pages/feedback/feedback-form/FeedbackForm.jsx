@@ -2,7 +2,7 @@ import { AiOutlineSend } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
 import { BiMessageDetail } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { themeContext } from '../../../other/themeContext';
 import classes from './feedback-form.module.scss';
 
@@ -10,9 +10,23 @@ export default function FeedbackForm() {
 	const { t } = useTranslation();
 	const { isDark } = useContext(themeContext);
 
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
+
+	const submitHandler = function () {
+		this.submit();
+		setEmail('');
+		setMessage('');
+	};
+
 	// USING "formspree" service
 	return (
-		<form action='https://formspree.io/f/meqbjgjn' method='POST' className={classes.form}>
+		<form
+			action='https://formspree.io/f/meqbjgjn'
+			method='POST'
+			className={classes.form}
+			onSubmitCapture={submitHandler}
+		>
 			<label className={!isDark ? classes.form__email : classes.form__email_dark}>
 				<h2>
 					<FiMail />
@@ -23,6 +37,8 @@ export default function FeedbackForm() {
 					type='email'
 					name='email'
 					placeholder={t('pages.feedback.email_placeholder')}
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 				/>
 			</label>
 			<label className={!isDark ? classes.form__message : classes.form__message_dark}>
@@ -34,6 +50,8 @@ export default function FeedbackForm() {
 					required
 					name='message'
 					placeholder={t('pages.feedback.message_placeholder')}
+					value={message}
+					onChange={(e) => setMessage(e.target.value)}
 				/>
 			</label>
 			<div className={classes.form__controls}>
