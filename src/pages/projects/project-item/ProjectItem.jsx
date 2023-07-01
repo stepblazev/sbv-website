@@ -5,26 +5,11 @@ import { MdOutlinePreview } from 'react-icons/md';
 import { skillDictionary } from '../../../skills/Skills';
 import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import noImage from '../../../assets/images/image-not-found.png';
+import ProjectImages from './ProjectImages';
 import classes from './project-item.module.scss';
 
 export default function ProjectItem({ project }) {
 	const { t } = useTranslation();
-
-	const [previewSource, setPreviewSource] = useState(noImage);
-
-	useEffect(() => {
-		const loadImage = async () => {
-			if (!project.preview) return;
-			try {
-				// const image = await import(`../../../assets/images/${project.preview}`);
-				// setPreviewSource(image.default);
-				setPreviewSource(project.preview);
-			} catch (error) {
-				console.error('Failed to load preview:', error);
-			}
-		};
-		loadImage();
-	});
 
 	return (
 		<div className={classes.item}>
@@ -41,9 +26,14 @@ export default function ProjectItem({ project }) {
 					</a>
 				)}
 			</div>
-			<div className={classes.itemImages}>
-				<ImageLoader src={previewSource} />
-			</div>
+			{project.preview.length === 0 ? (
+				<div className={classes.image}>
+					<ImageLoader src={noImage} />
+				</div>
+			) : (
+				<ProjectImages images={project.preview} />
+			)}
+
 			{Boolean(project.tech) && (
 				<div className={classes.itemTech}>
 					{project.tech.split(',').map((t) => (

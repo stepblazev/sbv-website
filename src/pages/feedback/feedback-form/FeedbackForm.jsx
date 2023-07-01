@@ -1,6 +1,5 @@
 import { AiOutlineSend } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
-import { RiMessage2Line } from 'react-icons/ri';
 import { BiMessageDetail } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';

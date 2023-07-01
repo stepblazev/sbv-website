@@ -75,12 +75,12 @@ $margin: 10px;
 		border-radius: 5px 0 0 0;
 		font-weight: 600;
 		color: $dark;
-		background-color: $white;
+		background-color: $light;
 	}
 
 	.avatar__years_light {
 		@extend .avatar__years_dark;
-		color: $white;
+		color: $light;
 		background-color: $dark;
 	}
 }

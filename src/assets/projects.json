@@ -1,11 +1,19 @@
 [
 	{
 		"id": 1,
-		"name": "computer-store",
+		"name": "computer-store-react",
 		"tech": "ts, react, css, axios, redux",
-		"github": "https://github.com/stepblazev/stopwatch-typescript",
-		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
-		"preview": "//live.staticflickr.com/65535/53013858618_fd50d23552_h.jpg"
+		"github": "https://github.com/stepblazev/computer-store-react",
+		"preview": [
+			"//live.staticflickr.com/65535/53015298056_b0f72fc34a_h.jpg",
+			"//live.staticflickr.com/65535/53014703597_b2480b46dc_h.jpg",
+			"//live.staticflickr.com/65535/53015677505_46b0c9d5d7_h.jpg",
+			"//live.staticflickr.com/65535/53015677500_286c1e7246_h.jpg",
+			"//live.staticflickr.com/65535/53015677480_bdbff7b0b6_h.jpg",
+			"//live.staticflickr.com/65535/53015297961_c400897c90_h.jpg",
+			"//live.staticflickr.com/65535/53015455104_68fab80a3e_h.jpg",
+			"//live.staticflickr.com/65535/53015297956_ccfc1a656b_h.jpg"
+		]
 	},
 	{
 		"id": 2,
@@ -13,29 +21,47 @@
 		"tech": "ts, html, css",
 		"github": "https://github.com/stepblazev/stopwatch-typescript",
 		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
-		"preview": "//live.staticflickr.com/65535/53013858593_06dcd28f36_h.jpg"
-	},
-	{
-		"id": 3,
-		"name": "test-calc-vistegra",
-		"tech": "js, react, css",
-		"github": "https://github.com/stepblazev/test-calc-vistegra",
-		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
-		"preview": "//live.staticflickr.com/65535/53013756750_bca9b88a0b_h.jpg"
+		"preview": [
+			"//live.staticflickr.com/65535/53014866282_be7bcfce50_h.jpg",
+			"//live.staticflickr.com/65535/53015936073_3bfb113da2_h.jpg",
+			"//live.staticflickr.com/65535/53015838080_95f9cb23bb_h.jpg"
+		]
 	},
 	{
 		"id": 4,
 		"name": "landing-techno-teal",
-		"tech": "html, css, js, gulp",
+		"tech": "js, html, css, gulp",
 		"github": "https://github.com/stepblazev/landing-techno-teal",
 		"ghPages": "https://stepblazev.github.io/landing-techno-teal/",
-		"preview": "//live.staticflickr.com/65535/53013378441_20839af5fb_h.jpg"
+		"preview": [
+			"//live.staticflickr.com/65535/53015944833_0f28dae3d2_h.jpg",
+			"//live.staticflickr.com/65535/53015846420_3c6862658f_h.jpg",
+			"//live.staticflickr.com/65535/53015623494_1746b40a8b_h.jpg",
+			"//live.staticflickr.com/65535/53015846425_7f13985a27_h.jpg",
+			"//live.staticflickr.com/65535/53015846430_140b75f4d7_h.jpg"
+		]
 	},
 	{
 		"id": 5,
 		"name": "sbv-website",
 		"tech": "js, react, css",
 		"github": "https://github.com/stepblazev/sbv-website",
-		"ghPages": "https://stepblazev.github.io/sbv-website/"
+		"ghPages": "https://stepblazev.github.io/sbv-website/",
+		"preview": [
+			"//live.staticflickr.com/65535/53015952713_7efb6d0f5e_h.jpg",
+			"//live.staticflickr.com/65535/53014882752_b0200ea487_h.jpg",
+			"//live.staticflickr.com/65535/53015631244_06be8ef814_h.jpg",
+			"//live.staticflickr.com/65535/53015631274_64f1bb4f3c_h.jpg",
+			"//live.staticflickr.com/65535/53015631254_833f201d8f_h.jpg",
+			"//live.staticflickr.com/65535/53015473741_8368b55d9c_h.jpg"
+		]
+	},
+	{
+		"id": 3,
+		"name": "test-calc-vistegra [wait for fix]",
+		"tech": "js, react, css",
+		"github": "https://github.com/stepblazev/test-calc-vistegra",
+		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
+		"preview": ["//live.staticflickr.com/65535/53013756750_bca9b88a0b_h.jpg"]
 	}
 ]

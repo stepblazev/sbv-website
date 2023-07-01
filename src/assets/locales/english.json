@@ -43,11 +43,9 @@
 			"title": "Projects",
 			"repo": "Repository",
 			"demo": "Demo",
-			"more": "description",
-			"hide": "hide",
-			"client": "Client",
-			"server": "Server",
-			"onlyDemo": "Only demo"
+			"page": "Page",
+			"next": "Next",
+			"back": "Back"
 		}
 	},
 	"back-home": "Home page"

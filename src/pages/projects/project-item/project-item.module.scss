@@ -34,12 +34,6 @@
 			}
 		}
 	}
-	&Images {
-		position: relative;
-		aspect-ratio: 16 / 9;
-		border-radius: 7px;
-		overflow: hidden;
-	}
 
 	&Tech {
 		display: flex;
@@ -47,5 +41,59 @@
 		flex-wrap: wrap;
 		column-gap: 20px;
 		row-gap: 10px;
+	}
+}
+
+.images {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	&__container {
+		transition: margin 0.3s ease;
+		display: flex;
+	}
+	&__image {
+		display: block;
+		aspect-ratio: 16 / 9;
+		cursor: pointer;
+	}
+	&__controls {
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		display: flex;
+		align-items: stretch;
+		gap: 5px;
+
+		button {
+			padding: 3px;
+			border-radius: 3px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: $light;
+			}
+
+			&:disabled {
+				background-color: rgba(0, 0, 0, 0.1);
+				cursor: default;
+			}
+		}
+	}
+	&__page {
+		padding: 3px;
+		border-radius: 3px;
+		background-color: rgba(0, 0, 0, 0.5);
+		font-weight: 400;
+		font-size: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $light;
 	}
 }
