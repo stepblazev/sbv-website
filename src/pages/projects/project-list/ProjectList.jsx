@@ -36,25 +36,27 @@ export default function ProjectList({ projects }) {
 					</SlideIn>
 				))}
 			</div>
-			<div className={classes.pagination}>
-				<p className={classes.pagination__page}>
-					{t('pages.projects.page')}: {page + 1}
-				</p>
-				<div className={classes.pagination__controls}>
-					{page !== 0 && (
-						<button onClick={backHandler}>
-							<BsArrowLeftSquare />
-							<span>{t('pages.projects.back')}</span>
-						</button>
-					)}
-					{page !== Math.ceil(projects.length / 4) - 1 && (
-						<button onClick={nextHandler}>
-							<span>{t('pages.projects.next')}</span>
-							<BsArrowRightSquare />
-						</button>
-					)}
+			{projects.length > _limit && (
+				<div className={classes.pagination}>
+					<p className={classes.pagination__page}>
+						{t('pages.projects.page')}: {page + 1}
+					</p>
+					<div className={classes.pagination__controls}>
+						{page !== 0 && (
+							<button onClick={backHandler}>
+								<BsArrowLeftSquare />
+								<span>{t('pages.projects.back')}</span>
+							</button>
+						)}
+						{page !== Math.ceil(projects.length / 4) - 1 && (
+							<button onClick={nextHandler}>
+								<span>{t('pages.projects.next')}</span>
+								<BsArrowRightSquare />
+							</button>
+						)}
+					</div>
 				</div>
-			</div>
+			)}
 		</>
 	);
 }

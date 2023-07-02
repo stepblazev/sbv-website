@@ -25,9 +25,9 @@ export default function ProjectImages({ images }) {
 				{...swipeHandlers}
 			>
 				{images.map((src) => (
-					<div key={src} target='_blank' href={src} className={classes.image}>
+					<a key={src} target='_blank' href={src} className={classes.image}>
 						<ImageLoader src={src} />
-					</div>
+					</a>
 				))}
 			</div>
 			{images.length > 1 && (
