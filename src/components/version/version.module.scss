@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.version_dark {
+	padding: 5px;
+	font-size: 12px;
+	color: $light;
+	font-weight: 500;
+
+	@media (max-width: 600px) {
+		text-align: center;
+	}
+}
+
+.version_light {
+	@extend .version_dark;
+	color: $dark;
+}

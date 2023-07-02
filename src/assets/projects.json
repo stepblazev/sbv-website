@@ -55,13 +55,5 @@
 			"//live.staticflickr.com/65535/53015631254_833f201d8f_h.jpg",
 			"//live.staticflickr.com/65535/53015473741_8368b55d9c_h.jpg"
 		]
-	},
-	{
-		"id": 3,
-		"name": "test-calc-vistegra [wait for fix]",
-		"tech": "js, react, css",
-		"github": "https://github.com/stepblazev/test-calc-vistegra",
-		"ghPages": "https://stepblazev.github.io/test-calc-vistegra/",
-		"preview": ["//live.staticflickr.com/65535/53013756750_bca9b88a0b_h.jpg"]
 	}
 ]
