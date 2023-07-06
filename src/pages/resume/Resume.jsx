@@ -4,6 +4,8 @@ import Skills from './skills/Skills';
 import SlideIn from '../../animations/SlideIn';
 import ImageLoader from '../../components/_UI/image-loader/ImageLoader';
 import user from '../../assets/images/no-avatar.png';
+import photo_1 from '../../assets/images/photo-1.png';
+import photo_2 from '../../assets/images/photo-2.png';
 import PageHeader from '../../components/page-header/PageHeader';
 import FadeIn from '../../animations/FadeIn';
 import PageContainer from '../../components/page-container/PageContainer';
@@ -28,7 +30,7 @@ export default function Resume() {
 						<div className={classes.contentImage}>
 							<SlideIn delay={250}>
 								<div className={classes.avatar}>
-									<ImageLoader src={user} />
+									<ImageLoader src={photo_1} />
 									<div
 										className={
 											isDark
