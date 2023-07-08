@@ -48,12 +48,12 @@
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
+
 	&__container {
 		transition: margin 0.3s ease;
 		display: flex;
 	}
 	&__image {
-		display: block;
 		aspect-ratio: 16 / 9;
 		cursor: pointer;
 	}
@@ -86,6 +86,7 @@
 		}
 	}
 	&__page {
+		width: 40px;
 		padding: 3px;
 		border-radius: 3px;
 		background-color: rgba(0, 0, 0, 0.5);

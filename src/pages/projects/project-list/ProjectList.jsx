@@ -16,6 +16,7 @@ export default function ProjectList({ projects }) {
 	);
 
 	useEffect(() => {
+		window.scrollTo({ top: 0 });
 		setLocalProjects(projects.slice(page * _limit, page * _limit + _limit));
 	}, [page]);
 

@@ -1,9 +1,8 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { MdOutlinePreview } from 'react-icons/md';
 import { skillDictionary } from '../../../skills/Skills';
-import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import noImage from '../../../assets/images/image-not-found.png';
 import ProjectImages from './ProjectImages';
 import classes from './project-item.module.scss';
@@ -27,9 +26,7 @@ export default function ProjectItem({ project }) {
 				)}
 			</div>
 			{project.preview.length === 0 ? (
-				<div className={classes.image}>
-					<ImageLoader src={noImage} />
-				</div>
+				<ProjectImages images={[noImage]} />
 			) : (
 				<ProjectImages images={project.preview} />
 			)}

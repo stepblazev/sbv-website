@@ -1,19 +1,23 @@
 import { useState } from 'react';
 import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import { MdOutlineNavigateNext } from 'react-icons/md';
-import classes from './project-item.module.scss';
 import { useSwipeable } from 'react-swipeable';
+import classes from './project-item.module.scss';
 
 export default function ProjectImages({ images }) {
 	const [slide, setSlide] = useState(0);
 
+	const previous = () => {
+		if (slide != 0) setSlide((prev) => prev - 1);
+	};
+
+	const next = () => {
+		if (slide != images.length - 1) setSlide((prev) => prev + 1);
+	};
+
 	const swipeHandlers = useSwipeable({
-		onSwipedLeft: () => {
-			if (slide != images.length - 1) setSlide((prev) => prev + 1);
-		},
-		onSwipedRight: () => {
-			if (slide != 0) setSlide((prev) => prev - 1);
-		},
+		onSwipedLeft: next,
+		onSwipedRight: previous,
 		preventScrollOnSwipe: true,
 	});
 
@@ -25,7 +29,8 @@ export default function ProjectImages({ images }) {
 				{...swipeHandlers}
 			>
 				{images.map((src) => (
-					<a key={src} target='_blank' href={src} className={classes.image}>
+					// FIXME aspect-ration | preloader
+					<a key={src} target='_blank' href={src} className={classes.images__image}>
 						<ImageLoader src={src} />
 					</a>
 				))}
@@ -34,7 +39,7 @@ export default function ProjectImages({ images }) {
 				<div className={classes.images__controls}>
 					<button
 						disabled={slide === 0}
-						onClick={() => setSlide((prev) => prev - 1)}
+						onClick={previous}
 						style={{ transform: 'rotate(180deg)' }}
 					>
 						<MdOutlineNavigateNext />
@@ -42,10 +47,7 @@ export default function ProjectImages({ images }) {
 					<p className={classes.images__page}>
 						{slide + 1} / {images.length}
 					</p>
-					<button
-						disabled={slide === images.length - 1}
-						onClick={() => setSlide((prev) => prev + 1)}
-					>
+					<button disabled={slide === images.length - 1} onClick={next}>
 						<MdOutlineNavigateNext />
 					</button>
 				</div>
