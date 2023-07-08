@@ -28,6 +28,20 @@
 		]
 	},
 	{
+		"id": 3,
+		"name": "todo-typescript",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/todo-typescript",
+		"ghPages": "https://stepblazev.github.io/todo-typescript/",
+		"preview": [
+			"//live.staticflickr.com/65535/53031576533_68a1e214d4_h.jpg",
+			"//live.staticflickr.com/65535/53031488775_554afe3897_h.jpg",
+			"//live.staticflickr.com/65535/53030510437_530e797543_h.jpg",
+			"//live.staticflickr.com/65535/53031268629_563a6d07e2_h.jpg",
+			"//live.staticflickr.com/65535/53031095636_1d098e1591_h.jpg"
+		]
+	},
+	{
 		"id": 4,
 		"name": "landing-techno-teal",
 		"tech": "js, html, css, gulp",
