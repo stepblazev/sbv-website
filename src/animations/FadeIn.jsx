@@ -5,10 +5,10 @@ export default function FadeIn({ children }) {
 
 	const props = useSpring({
 		opacity: 1,
-		transform: 'translateY(0px)',
-		from: { opacity: 0, transform: 'translateY(-50px)' },
+		transform: 'scale(1)',
+		from: { opacity: 0, transform: 'scale(1.1)' },
 		config: { duration: 700, easing: easings.easeOutQuart },
-		leave: { opacity: 0, transform: 'translateY(50px)' },
+		leave: { opacity: 0, transform: 'scale(1.1)' },
 		immediate: isMobile,
 	});
 

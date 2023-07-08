@@ -16,18 +16,6 @@
 		]
 	},
 	{
-		"id": 2,
-		"name": "stopwatch-typescript",
-		"tech": "ts, html, css",
-		"github": "https://github.com/stepblazev/stopwatch-typescript",
-		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
-		"preview": [
-			"//live.staticflickr.com/65535/53014866282_be7bcfce50_h.jpg",
-			"//live.staticflickr.com/65535/53015936073_3bfb113da2_h.jpg",
-			"//live.staticflickr.com/65535/53015838080_95f9cb23bb_h.jpg"
-		]
-	},
-	{
 		"id": 3,
 		"name": "todo-typescript",
 		"tech": "ts, html, css",
@@ -39,6 +27,18 @@
 			"//live.staticflickr.com/65535/53030510437_530e797543_h.jpg",
 			"//live.staticflickr.com/65535/53031268629_563a6d07e2_h.jpg",
 			"//live.staticflickr.com/65535/53031095636_1d098e1591_h.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"name": "stopwatch-typescript",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/stopwatch-typescript",
+		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
+		"preview": [
+			"//live.staticflickr.com/65535/53014866282_be7bcfce50_h.jpg",
+			"//live.staticflickr.com/65535/53015936073_3bfb113da2_h.jpg",
+			"//live.staticflickr.com/65535/53015838080_95f9cb23bb_h.jpg"
 		]
 	},
 	{
