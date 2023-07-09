@@ -20,21 +20,21 @@ export default function LanguageSwitcher() {
 			<button
 				onClick={changeLanguage}
 				value='en'
-				style={{
-					textDecoration: i18n.language === 'en' ? 'underline' : 'none',
-				}}
+				style={{ fontWeight: i18n.language === 'en' ? '700' : '500' }}
 			>
 				ENG
 			</button>
 			<button
 				onClick={changeLanguage}
 				value='ru'
-				style={{
-					textDecoration: i18n.language === 'ru' ? 'underline' : 'none',
-				}}
+				style={{ fontWeight: i18n.language === 'ru' ? '700' : '500' }}
 			>
 				РУС
 			</button>
+			<div
+				className={isDark ? classes.underline_dark : classes.underline_light}
+				style={{ left: i18n.language === 'en' ? '37px' : '77px' }}
+			></div>
 		</div>
 	);
 }

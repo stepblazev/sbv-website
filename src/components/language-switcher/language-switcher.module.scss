@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 .switch_dark {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -29,4 +30,18 @@
 	button {
 		color: $dark;
 	}
+}
+
+.underline_dark {
+	position: absolute;
+	height: 3px;
+	width: 33px;
+	background-color: $light;
+	bottom: 0;
+	left: 37px;
+	transition: left 0.2s ease;
+}
+.underline_light {
+	@extend .underline_dark;
+	background-color: $dark;
 }
