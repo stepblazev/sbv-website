@@ -9,7 +9,7 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<FadeIn>
+		<FadeIn mobileDisabled={true}>
 			<PageContainer>
 				<div className={classes.home}>
 					<VscCode className={classes.home__logo} />

@@ -1,5 +1,6 @@
 import ProjectItem from '../project-item/ProjectItem';
 import SlideIn from '../../../animations/SlideIn';
+import FadeIn from '../../../animations/FadeIn';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsArrowLeftSquare, BsArrowRightSquare } from 'react-icons/bs';
@@ -32,9 +33,9 @@ export default function ProjectList({ projects }) {
 		<>
 			<div className={classes.list}>
 				{localProjects.map((project, index) => (
-					<SlideIn key={project.id} delay={index * 200 + 150}>
+					<FadeIn key={project.id} delay={index * 200 + 150}>
 						<ProjectItem project={project} />
-					</SlideIn>
+					</FadeIn>
 				))}
 			</div>
 			{projects.length > _limit && (

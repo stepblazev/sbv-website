@@ -11,7 +11,7 @@ export default function Projects() {
 	const { t } = useTranslation();
 
 	return (
-		<FadeIn>
+		<FadeIn mobileDisabled={true}>
 			<PageContainer>
 				<div className={classes.projects}>
 					<PageHeader title={t('pages.projects.title')} SVG={AiOutlineFolderOpen} />

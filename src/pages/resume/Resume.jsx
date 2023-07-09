@@ -17,7 +17,7 @@ export default function Resume() {
 	const { isDark } = useContext(themeContext);
 
 	return (
-		<FadeIn>
+		<FadeIn mobileDisabled={true}>
 			<PageContainer>
 				<div className={classes.resume}>
 					<PageHeader title={t('pages.resume.title')} SVG={AiOutlineFileDone} />
