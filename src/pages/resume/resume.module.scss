@@ -21,11 +21,11 @@ $margin: 10px;
 		line-height: 1;
 		letter-spacing: 3px;
 
-		@media (max-width: 800px) {
+		@media (max-width: $breakpoint700) {
 			margin-left: $margin;
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: $breakpoint600) {
 			font-size: 28px;
 		}
 	}
@@ -38,11 +38,11 @@ $margin: 10px;
 		letter-spacing: 3px;
 		font-weight: 200;
 
-		@media (max-width: 800px) {
+		@media (max-width: $breakpoint700) {
 			margin-left: $margin;
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: $breakpoint600) {
 			font-size: 18px;
 		}
 	}
@@ -59,7 +59,7 @@ $margin: 10px;
 	transition: all 0.3s ease;
 	overflow: hidden;
 
-	@media (max-width: 500px) {
+	@media (max-width: $breakpoint400) {
 		width: 120px;
 		height: 120px;
 		margin-bottom: 0;
@@ -76,6 +76,10 @@ $margin: 10px;
 		font-weight: 600;
 		color: $dark;
 		background-color: $light;
+
+		@media (max-width: $breakpoint400) {
+			font-size: 12px;
+		}
 	}
 
 	.avatar__years_light {
@@ -89,7 +93,7 @@ $margin: 10px;
 	padding-left: 20px;
 	display: flex;
 
-	@media (max-width: 800px) {
+	@media (max-width: $breakpoint700) {
 		display: block;
 		padding-left: 10px;
 	}
@@ -99,7 +103,7 @@ $margin: 10px;
 		position: relative;
 		top: -95px;
 
-		@media (max-width: 800px) {
+		@media (max-width: $breakpoint700) {
 			position: static;
 			float: left;
 		}
@@ -112,10 +116,10 @@ $margin: 10px;
 			margin-bottom: 10px;
 			text-align: justify;
 
-			@media (max-width: 500px) {
+			@media (max-width: $breakpoint400) {
 				font-size: 14px;
 			}
-			@media (max-width: 800px) {
+			@media (max-width: $breakpoint700) {
 				text-align: left;
 			}
 		}

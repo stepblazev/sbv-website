@@ -1,7 +1,9 @@
+import { useContext } from 'react';
 import { useSpring, animated, easings } from 'react-spring';
+import { themeContext } from '../other/themeContext';
 
-export default function FadeIn({ delay = 0, mobileDisabled = false, children }) {
-	const isMobile = window.innerWidth < 600;
+export default function ZoomOut({ delay = 0, mobileDisabled = false, children }) {
+	const { isMobile } = useContext(themeContext);
 
 	const props = useSpring({
 		opacity: 1,

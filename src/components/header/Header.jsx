@@ -5,7 +5,7 @@ import classes from './header.module.scss';
 import { themeContext } from '../../other/themeContext';
 
 export default function Header() {
-	const { isDark } = useContext(themeContext);
+	const { isDark, isMobile } = useContext(themeContext);
 
 	return (
 		<header className={isDark ? classes.header_dark : classes.header_light}>

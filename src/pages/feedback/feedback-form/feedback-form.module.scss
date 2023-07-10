@@ -65,8 +65,8 @@
 		margin-top: 10px;
 		textarea {
 			@extend %field_light;
-			width: 100% !important;
-			height: 200px !important;
+			width: 100%;
+			height: 280px;
 			resize: none;
 
 			&:focus {
@@ -80,8 +80,8 @@
 		margin-top: 10px;
 		textarea {
 			@extend %field_dark;
-			width: 100% !important;
-			height: 200px !important;
+			width: 100%;
+			height: 280px;
 			resize: none;
 
 			&:focus {
@@ -114,12 +114,8 @@
 			}
 
 			svg {
-				height: 24px;
-				width: 24px;
-			}
-
-			@media (max-width: 500px) {
-				font-size: 18px;
+				height: 22px;
+				width: 22px;
 			}
 		}
 	}

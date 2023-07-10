@@ -1,6 +1,8 @@
+@import '../../styles/variables';
+
 .feedback {
 	width: 530px;
-	@media (max-width: 600px) {
+	@media (max-width: $breakpoint600) {
 		width: auto !important;
 	}
 }

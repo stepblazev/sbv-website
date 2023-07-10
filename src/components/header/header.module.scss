@@ -5,7 +5,7 @@
 	position: relative;
 	z-index: 1000;
 
-	@media (max-width: 600px) {
+	@media (max-width: $breakpoint600) {
 		padding: 10px 0;
 		position: sticky;
 		top: 0;
@@ -15,7 +15,7 @@
 
 .header_light {
 	@extend .header_dark;
-	@media (max-width: 600px) {
+	@media (max-width: $breakpoint600) {
 		background-color: $white;
 	}
 }

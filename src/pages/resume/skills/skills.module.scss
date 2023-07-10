@@ -8,8 +8,9 @@
 	background-color: $light;
 	color: $dark;
 	list-style: none;
+	transition: all 0.3s ease;
 
-	@media (max-width: 500px) {
+	@media (max-width: $breakpoint400) {
 		width: 120px;
 		font-size: 14px;
 		border-radius: 0 0 10px 10px;
@@ -24,7 +25,6 @@
 }
 .skills_light {
 	@extend .skills_dark;
-
 	background-color: $dark;
 	color: $light;
 }

@@ -1,15 +1,17 @@
 import ProjectItem from '../project-item/ProjectItem';
 import SlideIn from '../../../animations/SlideIn';
-import FadeIn from '../../../animations/FadeIn';
-import { useEffect, useState } from 'react';
+import ZoomIn from '../../../animations/ZoomIn';
+import { useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsArrowLeftSquare, BsArrowRightSquare } from 'react-icons/bs';
 import classes from './project-list.module.scss';
+import { themeContext } from '../../../other/themeContext';
 
 const _limit = 4;
 
 export default function ProjectList({ projects }) {
 	const { t } = useTranslation();
+	const { isMobile } = useContext(themeContext);
 
 	const [page, setPage] = useState(0);
 	const [localProjects, setLocalProjects] = useState(
@@ -33,9 +35,9 @@ export default function ProjectList({ projects }) {
 		<>
 			<div className={classes.list}>
 				{localProjects.map((project, index) => (
-					<FadeIn key={project.id} delay={index * 200 + 150}>
+					<ZoomIn key={project.id} delay={(isMobile ? index : index + 1) * 200 + 150}>
 						<ProjectItem project={project} />
-					</FadeIn>
+					</ZoomIn>
 				))}
 			</div>
 			{projects.length > _limit && (

@@ -18,7 +18,7 @@
 		text-decoration: none;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: $breakpoint600) {
 		border-radius: 0;
 		width: 100vw;
 		margin-left: -$container_padding;

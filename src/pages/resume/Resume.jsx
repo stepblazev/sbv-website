@@ -3,10 +3,9 @@ import { AiOutlineFileDone } from 'react-icons/ai';
 import Skills from './skills/Skills';
 import SlideIn from '../../animations/SlideIn';
 import ImageLoader from '../../components/_UI/image-loader/ImageLoader';
-import user from '../../assets/images/no-avatar.png';
 import photo from '../../assets/images/photo.webp';
 import PageHeader from '../../components/page-header/PageHeader';
-import FadeIn from '../../animations/FadeIn';
+import ZoomOut from '../../animations/ZoomOut';
 import PageContainer from '../../components/page-container/PageContainer';
 import { useContext } from 'react';
 import { themeContext } from '../../other/themeContext';
@@ -17,7 +16,7 @@ export default function Resume() {
 	const { isDark } = useContext(themeContext);
 
 	return (
-		<FadeIn mobileDisabled={true}>
+		<ZoomOut mobileDisabled={true}>
 			<PageContainer>
 				<div className={classes.resume}>
 					<PageHeader title={t('pages.resume.title')} SVG={AiOutlineFileDone} />
@@ -70,6 +69,6 @@ export default function Resume() {
 					</div>
 				</div>
 			</PageContainer>
-		</FadeIn>
+		</ZoomOut>
 	);
 }
