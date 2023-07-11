@@ -1,6 +1,8 @@
 @import '../../styles/variables';
+@import '../../styles/animations';
 
 .container_dark {
+	@include AnimationSettings(ZoomIn, 0ms, 400ms);
 	margin-bottom: 50px;
 	padding: 20px;
 	border-radius: 10px;

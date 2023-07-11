@@ -10,13 +10,13 @@ export default function Feedback() {
 	const { t } = useTranslation();
 
 	return (
-		<ZoomOut mobileDisabled={true}>
-			<PageContainer>
-				<div className={classes.feedback}>
-					<PageHeader title={t('pages.feedback.title')} SVG={RiMessage2Line} />
-					<FeedbackForm />
-				</div>
-			</PageContainer>
-		</ZoomOut>
+		// <ZoomOut mobileDisabled={true}>
+		<PageContainer>
+			<div className={classes.feedback}>
+				<PageHeader title={t('pages.feedback.title')} SVG={RiMessage2Line} />
+				<FeedbackForm />
+			</div>
+		</PageContainer>
+		/* </ZoomOut> */
 	);
 }

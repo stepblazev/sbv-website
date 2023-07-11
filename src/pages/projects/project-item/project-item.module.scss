@@ -1,6 +1,8 @@
 @import '../../../styles/variables';
+@import '../../../styles/animations';
 
 .item {
+	@include AnimationSettings(SlideIn, 0ms, 700ms);
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -46,7 +48,7 @@
 
 .images {
 	position: relative;
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 
 	&__container {
@@ -63,6 +65,7 @@
 		left: 5px;
 		display: flex;
 		align-items: stretch;
+
 		gap: 5px;
 
 		button {

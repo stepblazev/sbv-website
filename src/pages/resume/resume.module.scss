@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/animations';
 
 $margin: 10px;
 
@@ -49,6 +50,7 @@ $margin: 10px;
 }
 
 .avatar {
+	@include AnimationSettings(SlideIn, 300ms, 700ms);
 	margin-bottom: $margin;
 	width: 200px;
 	height: 200px;
@@ -96,6 +98,10 @@ $margin: 10px;
 	@media (max-width: $breakpoint700) {
 		display: block;
 		padding-left: 10px;
+	}
+
+	&__skills {
+		@include AnimationSettings(SlideIn, 600ms, 700ms);
 	}
 
 	&Image {

@@ -9,19 +9,19 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<ZoomOut mobileDisabled={true}>
-			<PageContainer>
-				<div className={classes.home}>
-					<VscCode className={classes.home__logo} />
-					<Links />
-					<div className={classes.home__text}>
-						<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p1') }}></p>
-						<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p2') }}></p>
-						<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p3') }}></p>
-						<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p4') }}></p>
-					</div>
+		// <ZoomOut mobileDisabled={true}>
+		<PageContainer>
+			<div className={classes.home}>
+				<VscCode className={classes.home__logo} />
+				<Links />
+				<div className={classes.home__text}>
+					<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p1') }}></p>
+					<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p2') }}></p>
+					<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p3') }}></p>
+					<p dangerouslySetInnerHTML={{ __html: t('pages.home.welcome.p4') }}></p>
 				</div>
-			</PageContainer>
-		</ZoomOut>
+			</div>
+		</PageContainer>
+		// </ZoomOut>
 	);
 }

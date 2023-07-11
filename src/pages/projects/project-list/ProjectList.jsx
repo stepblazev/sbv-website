@@ -35,9 +35,15 @@ export default function ProjectList({ projects }) {
 		<>
 			<div className={classes.list}>
 				{localProjects.map((project, index) => (
-					<ZoomIn key={project.id} delay={(isMobile ? index : index + 1) * 200 + 150}>
-						<ProjectItem project={project} />
-					</ZoomIn>
+					// <ZoomIn key={project.id} delay={(isMobile ? index : index + 1) * 200 + 150}>
+					<ProjectItem
+						key={project.id}
+						project={project}
+						style={{
+							animationDelay: `${(isMobile ? index : index + 1) * 200 + 150}ms`,
+						}}
+					/>
+					// </ZoomIn>
 				))}
 			</div>
 			{projects.length > _limit && (

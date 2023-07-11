@@ -16,59 +16,61 @@ export default function Resume() {
 	const { isDark } = useContext(themeContext);
 
 	return (
-		<ZoomOut mobileDisabled={true}>
-			<PageContainer>
-				<div className={classes.resume}>
-					<PageHeader title={t('pages.resume.title')} SVG={AiOutlineFileDone} />
-					<div className={classes.info}>
-						<h1 className={classes.infoName}>{t('about.myname')}</h1>
-						<h2 className={classes.infoJob}>{t('about.job')}</h2>
+		// <ZoomOut mobileDisabled={true}>
+		<PageContainer>
+			<div className={classes.resume}>
+				<PageHeader title={t('pages.resume.title')} SVG={AiOutlineFileDone} />
+				<div className={classes.info}>
+					<h1 className={classes.infoName}>{t('about.myname')}</h1>
+					<h2 className={classes.infoJob}>{t('about.job')}</h2>
+				</div>
+				<div className={classes.content}>
+					<div className={classes.contentImage}>
+						{/* <SlideIn delay={250}> */}
+						<div className={classes.avatar}>
+							<ImageLoader src={photo} />
+							<div
+								className={
+									isDark
+										? classes.avatar__years_dark
+										: classes.avatar__years_light
+								}
+							>
+								{t('pages.resume.age')}
+							</div>
+						</div>
+						{/* </SlideIn> */}
+						{/* <SlideIn delay={500}> */}
+						<div className={classes.content__skills}>
+							<Skills />
+						</div>
+						{/* </SlideIn> */}
 					</div>
-					<div className={classes.content}>
-						<div className={classes.contentImage}>
-							<SlideIn delay={250}>
-								<div className={classes.avatar}>
-									<ImageLoader src={photo} />
-									<div
-										className={
-											isDark
-												? classes.avatar__years_dark
-												: classes.avatar__years_light
-										}
-									>
-										{t('pages.resume.age')}
-									</div>
-								</div>
-							</SlideIn>
-							<SlideIn delay={500}>
-								<Skills />
-							</SlideIn>
-						</div>
-						<div className={classes.contentText}>
-							<p
-								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p1'),
-								}}
-							></p>
-							<p
-								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p2'),
-								}}
-							></p>
-							<p
-								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p3'),
-								}}
-							></p>
-							<p
-								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p4'),
-								}}
-							></p>
-						</div>
+					<div className={classes.contentText}>
+						<p
+							dangerouslySetInnerHTML={{
+								__html: t('pages.resume.content.p1'),
+							}}
+						></p>
+						<p
+							dangerouslySetInnerHTML={{
+								__html: t('pages.resume.content.p2'),
+							}}
+						></p>
+						<p
+							dangerouslySetInnerHTML={{
+								__html: t('pages.resume.content.p3'),
+							}}
+						></p>
+						<p
+							dangerouslySetInnerHTML={{
+								__html: t('pages.resume.content.p4'),
+							}}
+						></p>
 					</div>
 				</div>
-			</PageContainer>
-		</ZoomOut>
+			</div>
+		</PageContainer>
+		// </ZoomOut>
 	);
 }

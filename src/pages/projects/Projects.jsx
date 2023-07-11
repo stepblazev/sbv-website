@@ -11,13 +11,13 @@ export default function Projects() {
 	const { t } = useTranslation();
 
 	return (
-		<ZoomOut mobileDisabled={true}>
-			<PageContainer>
-				<div className={classes.projects}>
-					<PageHeader title={t('pages.projects.title')} SVG={AiOutlineFolderOpen} />
-					<ProjectList projects={projectsJSON} />
-				</div>
-			</PageContainer>
-		</ZoomOut>
+		// <ZoomOut mobileDisabled={true}>
+		<PageContainer>
+			<div className={classes.projects}>
+				<PageHeader title={t('pages.projects.title')} SVG={AiOutlineFolderOpen} />
+				<ProjectList projects={projectsJSON} />
+			</div>
+		</PageContainer>
+		// </ZoomOut>
 	);
 }

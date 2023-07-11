@@ -19,7 +19,6 @@ body {
 b {
 	font-weight: 700;
 	font-size: 19px;
-
 	@media (max-width: $breakpoint600) {
 		font-size: 16px;
 	}

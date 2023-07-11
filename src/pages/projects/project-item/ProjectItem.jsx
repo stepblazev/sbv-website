@@ -7,11 +7,11 @@ import noImage from '../../../assets/images/image-not-found.png';
 import ProjectImages from './ProjectImages';
 import classes from './project-item.module.scss';
 
-export default function ProjectItem({ project }) {
+export default function ProjectItem({ project, ...props }) {
 	const { t } = useTranslation();
 
 	return (
-		<div className={classes.item}>
+		<div className={classes.item} {...props}>
 			<h2 className={classes.itemName}>{project.name}</h2>
 			<div className={classes.itemLinks}>
 				<a href={project.github} target='_blank'>
