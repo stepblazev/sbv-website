@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.hide_dark {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	transition: all 0.3s ease 0.25s;
+
+	svg {
+		fill: $light;
+		width: 28px;
+		height: 28px;
+	}
+}
+
+.hide_light {
+	@extend .hide_dark;
+
+	svg {
+		fill: $dark;
+	}
+}
+
+.opened {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}
+
+.hidden {
+	opacity: 0;
+	transform: scale(-1) rotate(360deg);
+}

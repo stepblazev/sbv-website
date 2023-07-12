@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from 'react';
 import LanguageSwitcher from '../language-switcher/LanguageSwitcher';
 import ThemeSwitcher from '../theme-switcher/ThemeSwitcher';
 import { themeContext } from '../../other/themeContext';
+import OpenBurger from '../open-burger/OpenBurger';
 import classes from './header.module.scss';
 
 export default function Header() {
@@ -25,7 +26,7 @@ export default function Header() {
 		>
 			<div className={[classes.content, 'container'].join(' ')}>
 				<LanguageSwitcher />
-				<ThemeSwitcher />
+				{isMobile ? <OpenBurger /> : <ThemeSwitcher />}
 			</div>
 		</header>
 	);

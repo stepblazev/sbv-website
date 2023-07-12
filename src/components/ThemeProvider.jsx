@@ -2,16 +2,25 @@ import { useState, useCallback, useEffect } from 'react';
 import { themeContext } from '../other/themeContext';
 
 export default function ThemeProvider({ children }) {
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 	const [isDark, setIsDark] = useState(localStorage.getItem('isDark') === 'true');
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+	const [isBurger, setIsBurger] = useState(false);
 
 	useEffect(() => {
-		const handleResize = () => setIsMobile(window.innerWidth < 600);
+		const handleResize = () => {
+			const newIsMobile = window.innerWidth < 600;
+			setIsMobile(newIsMobile);
+			setIsBurger((prev) => (newIsMobile ? prev : false));
+		};
 		window.addEventListener('resize', handleResize);
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
 	}, []);
+
+	useEffect(() => {
+		document.body.style.overflow = isBurger ? 'hidden' : 'auto';
+	}, [isBurger]);
 
 	const toggleTheme = useCallback(() => {
 		setIsDark((prev) => {
@@ -22,7 +31,7 @@ export default function ThemeProvider({ children }) {
 	}, []);
 
 	return (
-		<themeContext.Provider value={{ isMobile, isDark, toggleTheme }}>
+		<themeContext.Provider value={{ isDark, toggleTheme, isBurger, setIsBurger, isMobile }}>
 			{children}
 		</themeContext.Provider>
 	);

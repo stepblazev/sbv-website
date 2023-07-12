@@ -1,7 +1,6 @@
-import { useTranslation } from 'react-i18next';
 import { VscCode } from 'react-icons/vsc';
+import { useTranslation } from 'react-i18next';
 import Links from './links/Links';
-import ZoomOut from '../../animations/ZoomOut';
 import PageContainer from '../../components/page-container/PageContainer';
 import classes from './home.module.scss';
 
@@ -9,7 +8,6 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		// <ZoomOut mobileDisabled={true}>
 		<PageContainer>
 			<div className={classes.home}>
 				<VscCode className={classes.home__logo} />
@@ -22,6 +20,5 @@ export default function Home() {
 				</div>
 			</div>
 		</PageContainer>
-		// </ZoomOut>
 	);
 }

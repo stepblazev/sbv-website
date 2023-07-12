@@ -1,0 +1,91 @@
+@import '../../styles/variables';
+
+.burger_dark {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 10px 15px;
+	background-color: $black;
+	color: $light;
+	z-index: 1;
+
+	svg {
+		fill: $light;
+	}
+
+	.header__link {
+		border-color: $light;
+	}
+}
+
+.burger_light {
+	@extend .burger_dark;
+	background-color: $light;
+	color: $dark;
+
+	svg {
+		fill: $dark;
+	}
+
+	.header__link {
+		border-color: $dark;
+	}
+}
+
+.header {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__links {
+		display: flex;
+		gap: 10px;
+
+		&_opened {
+			.header__link {
+				opacity: 1;
+				svg {
+					transform: scale(1) rotate(0deg);
+				}
+			}
+		}
+
+		&_hidden {
+			.header__link {
+				opacity: 0;
+				svg {
+					transform: scale(0) rotate(360deg);
+				}
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px;
+		border: 1.5px solid;
+		border-radius: 50%;
+		transition: opacity 0.3s ease 0.25s;
+		svg {
+			transition: opacity 0.3s ease 0.25s, transform 0.3s ease 0.25s;
+		}
+	}
+}
+
+.content {
+	flex-grow: 1;
+}
+
+.settings {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}

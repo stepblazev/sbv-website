@@ -2,6 +2,13 @@
 @import './variables';
 @import './browser.scss';
 
+input,
+textarea,
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
 * {
 	margin: 0;
 	padding: 0;

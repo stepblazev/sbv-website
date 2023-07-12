@@ -2,15 +2,13 @@ import { useContext } from 'react';
 import { useSpring, animated, easings } from 'react-spring';
 import { themeContext } from '../other/themeContext';
 
-export default function ZoomOut({ delay = 0, mobileDisabled = false, duration = 700, children }) {
+export default function SpinIn({ delay = 0, mobileDisabled = false, duration = 700, children }) {
 	const { isMobile } = useContext(themeContext);
 
 	const props = useSpring({
-		opacity: 1,
-		transform: 'scale(1)',
-		from: { opacity: 0, transform: 'scale(1.1)' },
+		from: { opacity: 0, transform: 'scale(0.6) rotate(360deg)' },
+		to: { opacity: 1, transform: 'scale(1) rotate(0deg)' },
 		config: { duration, easing: easings.easeOutQuart },
-		leave: { opacity: 0, transform: 'scale(1.1)' },
 		immediate: mobileDisabled && isMobile,
 		delay,
 	});

@@ -9,13 +9,19 @@
 	font-weight: 500;
 	background-color: $light;
 	color: $dark;
-	fill: $dark;
 	transition: all 0.2s ease;
+
+	svg {
+		fill: $dark !important;
+	}
 }
 
 .switch_light {
 	@extend .switch_dark;
 	background-color: $dark;
 	color: $light;
-	fill: $light;
+
+	svg {
+		color: $light !important;
+	}
 }

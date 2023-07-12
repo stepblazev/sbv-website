@@ -9,10 +9,10 @@
 	background-color: $dark;
 	color: $light;
 	fill: $light;
-
 	-webkit-box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
 	-moz-box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
 	box-shadow: 0px 4px 8px 0px rgba(60, 60, 60, 0.2);
+	overflow: hidden;
 
 	a {
 		color: $light;
