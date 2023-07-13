@@ -4,11 +4,11 @@ import ThemeSwitcher from '../theme-switcher/ThemeSwitcher';
 import { themeContext } from '../../other/themeContext';
 import { SlSpeech as MailSVG } from 'react-icons/sl';
 import { BsTelephone as PhoneSVG } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import HideBurger from '../hide-burger/HideBurger';
 import { AiOutlineFileDone as ResumeSVG, AiOutlineFolderOpen as ProjectsSVG } from 'react-icons/ai';
 import { RiMessage2Line as FeedbackSVG } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import classes from './burger-menu.module.scss';
 
 export default function BurgerMenu() {
@@ -35,26 +35,26 @@ export default function BurgerMenu() {
 				<HideBurger />
 			</div>
 			<div className={classes.content}>
-				{/* <ul>
+				<ul className={isBurger ? classes.list__opened : classes.list__hidden}>
 					<li>
-						<Link to='/resume'>
+						<a to='www.google.com'>
 							<ResumeSVG />
 							{t('pages.home.links.resume')}
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to='/projects'>
+						<a to='/projects'>
 							<ProjectsSVG />
 							{t('pages.home.links.projects')}
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to='/feedback'>
+						<a to='/feedback'>
 							<FeedbackSVG />
 							{t('pages.home.links.feedback')}
-						</Link>
+						</a>
 					</li>
-				</ul> */}
+				</ul>
 			</div>
 			<div className={classes.settings}>
 				<LanguageSwitcher />

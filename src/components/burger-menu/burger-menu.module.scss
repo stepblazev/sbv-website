@@ -81,11 +81,58 @@
 }
 
 .content {
+	margin-top: 50px;
 	flex-grow: 1;
+
+	ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 20px;
+
+		li {
+			opacity: 0;
+			border-bottom: 2px solid;
+			transition: opacity 0.3s ease 0.25s;
+			a {
+				width: 100%;
+				padding: 5px;
+				display: flex;
+				gap: 5px;
+				align-items: center;
+				color: inherit;
+				font-size: 20px;
+				font-weight: 600;
+				text-decoration: none;
+				transform: translateX(70px);
+				transition: transform 0.3s ease 0.25s;
+
+				svg {
+					height: 24px;
+					width: 24px;
+				}
+
+				@media (max-width: $breakpoint400) {
+					font-size: 18px;
+				}
+			}
+		}
+	}
 }
 
 .settings {
+	padding-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
 	gap: 10px;
+}
+
+.list__opened {
+	li {
+		opacity: 1 !important;
+		a {
+			transform: translateX(0) !important;
+		}
+	}
 }
