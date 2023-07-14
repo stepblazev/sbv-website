@@ -3,6 +3,6 @@
 .feedback {
 	width: 530px;
 	@media (max-width: $breakpoint600) {
-		width: auto !important;
+		width: auto;
 	}
 }

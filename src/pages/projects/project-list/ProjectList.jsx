@@ -1,13 +1,11 @@
 import ProjectItem from '../project-item/ProjectItem';
-import SlideIn from '../../../animations/SlideIn';
-import ZoomIn from '../../../animations/ZoomIn';
 import { useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsArrowLeftSquare, BsArrowRightSquare } from 'react-icons/bs';
-import classes from './project-list.module.scss';
 import { themeContext } from '../../../other/themeContext';
+import classes from './project-list.module.scss';
 
-const _limit = 4;
+const _limit = 6;
 
 export default function ProjectList({ projects }) {
 	const { t } = useTranslation();
@@ -35,7 +33,6 @@ export default function ProjectList({ projects }) {
 		<>
 			<div className={classes.list}>
 				{localProjects.map((project, index) => (
-					// <ZoomIn key={project.id} delay={(isMobile ? index : index + 1) * 200 + 150}>
 					<ProjectItem
 						key={project.id}
 						project={project}
@@ -43,7 +40,6 @@ export default function ProjectList({ projects }) {
 							animationDelay: `${(isMobile ? index : index + 1) * 200 + 150}ms`,
 						}}
 					/>
-					// </ZoomIn>
 				))}
 			</div>
 			{projects.length > _limit && (
