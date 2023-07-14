@@ -75,7 +75,7 @@
 		border-radius: 50%;
 		transition: opacity 0.3s ease 0.25s;
 		svg {
-			transition: opacity 0.3s ease 0.25s, transform 0.3s ease 0.25s;
+			transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
 		}
 	}
 }
@@ -95,9 +95,10 @@
 			opacity: 0;
 			border-bottom: 2px solid;
 			transition: opacity 0.3s ease 0.25s;
+
 			a {
 				width: 100%;
-				padding: 5px;
+				padding: 10px 0;
 				display: flex;
 				gap: 5px;
 				align-items: center;
@@ -106,7 +107,7 @@
 				font-weight: 600;
 				text-decoration: none;
 				transform: translateX(70px);
-				transition: transform 0.3s ease 0.25s;
+				transition: transform 0.3s ease 0.2s;
 
 				svg {
 					height: 24px;
@@ -119,6 +120,15 @@
 			}
 		}
 	}
+
+	.list__opened {
+		li {
+			opacity: 1;
+			a {
+				transform: translateX(0);
+			}
+		}
+	}
 }
 
 .settings {
@@ -126,13 +136,4 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 10px;
-}
-
-.list__opened {
-	li {
-		opacity: 1 !important;
-		a {
-			transform: translateX(0) !important;
-		}
-	}
 }

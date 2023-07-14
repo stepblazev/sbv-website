@@ -1,6 +1,6 @@
 import { Fragment, useContext } from 'react';
-import Header from '../header/Header';
 import { themeContext } from '../../other/themeContext';
+import Header from '../header/Header';
 import FixedLinks from '../fixed-links/FixedLinks';
 import Version from '../version/Version';
 import BurgerMenu from '../burger-menu/BurgerMenu';
@@ -13,7 +13,7 @@ export default function Layout({ children }) {
 		<Fragment>
 			<div
 				className={isDark ? classes.app_dark : classes.app_light}
-				style={isBurger ? { marginLeft: '100vh' } : {}}
+				style={isBurger ? { transform: 'translateX(100%)' } : {}}
 			>
 				<Header />
 				<main className={[classes.app__container, 'container'].join(' ')}>{children}</main>

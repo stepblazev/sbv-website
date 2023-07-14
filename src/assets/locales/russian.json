@@ -11,6 +11,7 @@
 	"pages": {
 		"home": {
 			"links": {
+				"home": "Главная",
 				"resume": "Резюме",
 				"projects": "Проекты",
 				"feedback": "Связь"

@@ -1,13 +1,16 @@
+import { HashRouter } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import ThemeProvider from './components/ThemeProvider';
-import RouteProvider from './router/RouteProvider';
+import Router from './router/RouteProvider';
 
 export default function App() {
 	return (
-		<ThemeProvider>
-			<Layout>
-				<RouteProvider />
-			</Layout>
-		</ThemeProvider>
+		<HashRouter>
+			<ThemeProvider>
+				<Layout>
+					<Router />
+				</Layout>
+			</ThemeProvider>
+		</HashRouter>
 	);
 }

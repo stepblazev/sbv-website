@@ -11,6 +11,7 @@
 	"pages": {
 		"home": {
 			"links": {
+				"home": "Home",
 				"resume": "Resume",
 				"projects": "Projects",
 				"feedback": "Feedback"
