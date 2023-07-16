@@ -1,5 +1,19 @@
 [
 	{
+		"id": 3,
+		"name": "todo-typescript",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/todo-typescript",
+		"ghPages": "https://stepblazev.github.io/todo-typescript/",
+		"preview": [
+			"//live.staticflickr.com/65535/53049934689_d62790a885_k.jpg",
+			"//live.staticflickr.com/65535/53049934659_1c6da36138_k.jpg",
+			"//live.staticflickr.com/65535/53049934649_620eba85d5_k.jpg",
+			"//live.staticflickr.com/65535/53050131380_8f0871375b_k.jpg",
+			"//live.staticflickr.com/65535/53049934639_40d9c521f6_k.jpg"
+		]
+	},
+	{
 		"id": 1,
 		"name": "computer-store-react",
 		"tech": "ts, react, css, axios, redux",
@@ -16,29 +30,15 @@
 		]
 	},
 	{
-		"id": 3,
-		"name": "todo-typescript",
-		"tech": "ts, html, css",
-		"github": "https://github.com/stepblazev/todo-typescript",
-		"ghPages": "https://stepblazev.github.io/todo-typescript/",
-		"preview": [
-			"//live.staticflickr.com/65535/53031576533_68a1e214d4_h.jpg",
-			"//live.staticflickr.com/65535/53031488775_554afe3897_h.jpg",
-			"//live.staticflickr.com/65535/53030510437_530e797543_h.jpg",
-			"//live.staticflickr.com/65535/53031268629_563a6d07e2_h.jpg",
-			"//live.staticflickr.com/65535/53031095636_1d098e1591_h.jpg"
-		]
-	},
-	{
 		"id": 2,
 		"name": "stopwatch-typescript",
 		"tech": "ts, html, css",
 		"github": "https://github.com/stepblazev/stopwatch-typescript",
 		"ghPages": "https://stepblazev.github.io/stopwatch-typescript/",
 		"preview": [
-			"//live.staticflickr.com/65535/53015838080_95f9cb23bb_h.jpg",
-			"//live.staticflickr.com/65535/53015936073_3bfb113da2_h.jpg",
-			"//live.staticflickr.com/65535/53014866282_be7bcfce50_h.jpg"
+			"//live.staticflickr.com/65535/53050140595_922879040b_k.jpg",
+			"//live.staticflickr.com/65535/53050242953_73a7da7a2a_k.jpg",
+			"//live.staticflickr.com/65535/53050242948_5ac72556c1_k.jpg"
 		]
 	},
 	{
