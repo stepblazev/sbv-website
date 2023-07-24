@@ -7,6 +7,10 @@ import PageHeader from '../../components/page-header/PageHeader';
 import PageContainer from '../../components/page-container/PageContainer';
 import { useContext } from 'react';
 import { themeContext } from '../../other/themeContext';
+import ExtraContent from '../../components/_UI/extra-content/ExtraContent';
+import { VscSettingsGear as SkillsSVG } from 'react-icons/vsc';
+import { AiOutlineExperiment as EducSVG } from 'react-icons/ai';
+import { RiFileUserLine as CommonSVG } from 'react-icons/ri';
 import classes from './resume.module.scss';
 
 export default function Resume() {
@@ -23,7 +27,6 @@ export default function Resume() {
 				</div>
 				<div className={classes.content}>
 					<div className={classes.contentImage}>
-						{/* <SlideIn delay={250}> */}
 						<div className={classes.avatar}>
 							<ImageLoader src={photo} />
 							<div
@@ -36,12 +39,9 @@ export default function Resume() {
 								{t('pages.resume.age')}
 							</div>
 						</div>
-						{/* </SlideIn> */}
-						{/* <SlideIn delay={500}> */}
 						<div className={classes.content__skills}>
 							<Skills />
 						</div>
-						{/* </SlideIn> */}
 					</div>
 					<div className={classes.contentText}>
 						<p
@@ -64,6 +64,46 @@ export default function Resume() {
 								__html: t('pages.resume.content.p4'),
 							}}
 						></p>
+						{/* <ExtraContent
+							title='Общая информация'
+							defaultOpened={true}
+							ICON={CommonSVG}
+						>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: t('pages.resume.content.p1'),
+								}}
+							></p>
+						</ExtraContent>
+						<ExtraContent
+							title='Навыки и технологии разработки'
+							defaultOpened={true}
+							ICON={SkillsSVG}
+						>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: t('pages.resume.content.p2'),
+								}}
+							></p>
+						</ExtraContent>
+						<ExtraContent
+							title='Образование и опыт работы'
+							defaultOpened={true}
+							ICON={EducSVG}
+						>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: t('pages.resume.content.p3'),
+								}}
+							></p>
+						</ExtraContent>
+						<ExtraContent title='Дополнительная информация' defaultOpened={true}>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: t('pages.resume.content.p4'),
+								}}
+							></p>
+						</ExtraContent> */}
 					</div>
 				</div>
 			</div>

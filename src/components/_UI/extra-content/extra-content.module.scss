@@ -1,0 +1,99 @@
+@import '../../../styles/variables';
+
+%more-template {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 2px;
+}
+
+.extra_dark {
+	margin: 5px 0;
+	overflow: hidden;
+
+	.control {
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		background-color: unset;
+
+		&__title {
+			font-size: 20px;
+			font-weight: 700;
+			color: $light;
+		}
+
+		svg {
+			fill: $light;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.content {
+		margin: 10px 0;
+		transition: all 0.4s ease;
+	}
+
+	.content_hidden {
+		margin: 0;
+	}
+
+	.more {
+		flex-grow: 1;
+		position: relative;
+		display: flex;
+		justify-content: end;
+
+		&::before {
+			@extend %more-template;
+			width: 12px;
+			height: 2px;
+			background-color: $light;
+		}
+
+		&::after {
+			@extend %more-template;
+			right: 10px;
+			width: 2px;
+			height: 12px;
+			transition: height 0.4s ease;
+			background-color: $light;
+		}
+
+		&_hide {
+			&::after {
+				@extend %more-template;
+				width: 2px;
+				height: 0px;
+			}
+		}
+	}
+}
+
+.extra_light {
+	@extend .extra_dark;
+
+	.control {
+		&__title {
+			color: $dark;
+		}
+		svg {
+			fill: $dark;
+		}
+	}
+
+	.more {
+		&::before {
+			background-color: $dark;
+		}
+
+		&::after {
+			background-color: $dark;
+		}
+	}
+}
