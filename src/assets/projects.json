@@ -1,6 +1,22 @@
 [
 	{
-		"id": 3,
+		"id": 1,
+		"name": "notes-task",
+		"tech": "ts, react, redux, mui, idb",
+		"github": "https://github.com/stepblazev/notes-task",
+		"ghPages": "https://stepblazev.github.io/notes-task/",
+		"preview": [
+			"//live.staticflickr.com/65535/53088629105_0d96025edf_k.jpg",
+			"//live.staticflickr.com/65535/53087661542_f9d97ccca0_k.jpg",
+			"//live.staticflickr.com/65535/53088719918_b3b5ac8c03_k.jpg",
+			"//live.staticflickr.com/65535/53088629095_1968c43c85_k.jpg",
+			"//live.staticflickr.com/65535/53088719913_c451c78e68_k.jpg",
+			"//live.staticflickr.com/65535/53087661527_2031a40f19_k.jpg",
+			"//live.staticflickr.com/65535/53088629085_bd5981f97e_k.jpg"
+		]
+	},
+	{
+		"id": 2,
 		"name": "todo-typescript",
 		"tech": "ts, html, css",
 		"github": "https://github.com/stepblazev/todo-typescript",
@@ -14,7 +30,7 @@
 		]
 	},
 	{
-		"id": 1,
+		"id": 3,
 		"name": "computer-store-react",
 		"tech": "ts, react, css, axios, redux",
 		"github": "https://github.com/stepblazev/computer-store-react",
@@ -30,7 +46,7 @@
 		]
 	},
 	{
-		"id": 2,
+		"id": 4,
 		"name": "stopwatch-typescript",
 		"tech": "ts, html, css",
 		"github": "https://github.com/stepblazev/stopwatch-typescript",
@@ -42,7 +58,7 @@
 		]
 	},
 	{
-		"id": 4,
+		"id": 5,
 		"name": "landing-techno-teal",
 		"tech": "js, html, css, gulp",
 		"github": "https://github.com/stepblazev/landing-techno-teal",
@@ -56,7 +72,7 @@
 		]
 	},
 	{
-		"id": 5,
+		"id": 6,
 		"name": "sbv-website",
 		"tech": "js, react, css",
 		"github": "https://github.com/stepblazev/sbv-website",

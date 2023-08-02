@@ -8,6 +8,8 @@ import {
 	SiNodedotjs,
 	SiPostgresql,
 	SiJsonwebtokens,
+	SiMui,
+	SiDatabricks,
 } from 'react-icons/si';
 import { TbBrandRedux } from 'react-icons/tb';
 import { FaReact, FaGulp } from 'react-icons/fa';
@@ -26,6 +28,8 @@ export const skillDictionary = {
 	sql: <Sql />,
 	jwt: <Jwt />,
 	gulp: <Gulp />,
+	mui: <Mui />,
+	idb: <Idb />,
 };
 
 export function Html() {
@@ -132,6 +136,24 @@ export function Gulp() {
 		<div className={classes.skill}>
 			<FaGulp />
 			Gulp
+		</div>
+	);
+}
+
+export function Mui() {
+	return (
+		<div className={classes.skill}>
+			<SiMui />
+			Material UI
+		</div>
+	);
+}
+
+export function Idb() {
+	return (
+		<div className={classes.skill}>
+			<SiDatabricks />
+			IndexedDB
 		</div>
 	);
 }
