@@ -22,7 +22,8 @@ export default function ExtraContent({
 		contentRef.current.style.height = opened
 			? `${contentRef.current.firstChild.offsetHeight}px`
 			: '0';
-	}, [opened]);
+		// FIXME
+	}, [opened, contentRef.current?.firstChild.offsetHeight]);
 
 	return (
 		<article className={[isDark ? classes.extra_dark : classes.extra_light].join(' ')}>
