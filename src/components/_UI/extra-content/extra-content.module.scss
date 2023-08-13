@@ -22,9 +22,14 @@
 		background-color: unset;
 
 		&__title {
+			text-align: left;
 			font-size: 20px;
 			font-weight: 700;
 			color: $light;
+
+			@media (max-width: $breakpoint600) {
+				font-size: 16px;
+			}
 		}
 
 		svg {
@@ -36,7 +41,7 @@
 
 	.content {
 		margin: 10px 0;
-		transition: all 0.4s ease;
+		transition: height 0.4s ease, margin 0.4s ease;
 	}
 
 	.content_hidden {
@@ -44,10 +49,10 @@
 	}
 
 	.more {
+		padding-right: 15px;
 		flex-grow: 1;
 		position: relative;
 		display: flex;
-		justify-content: end;
 
 		&::before {
 			@extend %more-template;

@@ -1,132 +1,25 @@
 @import '../../styles/variables';
 @import '../../styles/animations';
 
-$margin: 10px;
-
 .resume {
-	max-width: 900px;
-}
-
-.info {
-	margin-top: 20px;
-	margin-left: -20px;
-	margin-right: -20px;
-	padding: 0 20px;
-	border-bottom-width: 5px;
-	border-bottom-style: solid;
-
-	&Name {
-		margin-left: 240px;
-		margin-bottom: 5px;
-		font-size: 42px;
-		line-height: 1;
-		letter-spacing: 3px;
+	max-width: 1000px;
+	&__content {
+		display: flex;
+		gap: 10px;
 
 		@media (max-width: $breakpoint700) {
-			margin-left: $margin;
+			flex-direction: column;
 		}
 
-		@media (max-width: $breakpoint600) {
-			font-size: 28px;
-		}
-	}
+		&Articles {
+			article {
+				margin-bottom: 10px;
+				text-align: justify;
 
-	&Job {
-		margin-left: 240px;
-		margin-bottom: $margin;
-		font-size: 24px;
-		line-height: 1;
-		letter-spacing: 3px;
-		font-weight: 200;
-
-		@media (max-width: $breakpoint700) {
-			margin-left: $margin;
-		}
-
-		@media (max-width: $breakpoint600) {
-			font-size: 18px;
-		}
-	}
-}
-
-.avatar {
-	@include AnimationSettings(SlideIn, 300ms, 700ms);
-	margin-bottom: $margin;
-	width: 200px;
-	height: 200px;
-	position: relative;
-	border-radius: 10px;
-	border-width: 3px;
-	border-style: solid;
-	transition: all 0.3s ease;
-	overflow: hidden;
-
-	@media (max-width: $breakpoint400) {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 0;
-		border-radius: 10px 10px 0 0;
-	}
-
-	.avatar__years_dark {
-		padding: 3px 7px;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		display: inline-block;
-		border-radius: 5px 0 0 0;
-		font-weight: 600;
-		color: $dark;
-		background-color: $light;
-
-		@media (max-width: $breakpoint400) {
-			font-size: 12px;
-		}
-	}
-
-	.avatar__years_light {
-		@extend .avatar__years_dark;
-		color: $light;
-		background-color: $dark;
-	}
-}
-
-.content {
-	padding-left: 20px;
-	display: flex;
-
-	@media (max-width: $breakpoint700) {
-		display: block;
-		padding-left: 10px;
-	}
-
-	&__skills {
-		@include AnimationSettings(SlideIn, 600ms, 700ms);
-	}
-
-	&Image {
-		margin-right: 20px;
-		position: relative;
-		top: -95px;
-
-		@media (max-width: $breakpoint700) {
-			position: static;
-			float: left;
-		}
-	}
-
-	&Text {
-		margin-top: 10px;
-
-		p {
-			margin-bottom: 10px;
-			text-align: justify;
-
-			@media (max-width: $breakpoint400) {
-				font-size: 14px;
-			}
-			@media (max-width: $breakpoint700) {
-				text-align: left;
+				@media (max-width: $breakpoint600) {
+					font-size: 14px;
+					text-align: left;
+				}
 			}
 		}
 	}

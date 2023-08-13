@@ -1,0 +1,70 @@
+@import '../../../styles/variables';
+@import '../../../styles/animations';
+
+.card_dark {
+	min-width: 25%;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: $black;
+	transition: background 0.3s ease;
+	background-image: url(../../../assets/svg/topography_dark.svg);
+	background-repeat: repeat;
+}
+
+.card_light {
+	@extend .card_dark;
+	background-color: $light;
+	background-image: url(../../../assets/svg/topography_light.svg);
+}
+
+.avatar {
+	margin: 0 auto;
+	max-width: 150px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.name {
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.career {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.about_dark {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	li {
+		display: flex;
+		font-weight: 500;
+		gap: 7px;
+
+		div {
+			flex-grow: 1;
+			border-bottom: 2px dotted $light;
+		}
+	}
+}
+
+.about_light {
+	@extend .about_dark;
+	li {
+		div {
+			border-color: $dark;
+		}
+	}
+}
+
+.skills {
+	margin-top: 20px;
+}

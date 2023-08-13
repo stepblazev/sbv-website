@@ -6,7 +6,7 @@ import classes from './extra-content.module.scss';
 export default function ExtraContent({
 	ICON = InfoSVG,
 	title = 'No title',
-	defaultOpened = false,
+	defaultOpened = true,
 	children,
 }) {
 	const { isDark } = useContext(themeContext);

@@ -1,9 +1,5 @@
 {
 	"version": "Version",
-	"about": {
-		"myname": "Eugene Ohvatuk",
-		"job": "Frontend developer"
-	},
 	"theme": {
 		"lightTheme": "Light theme",
 		"darkTheme": "Dark theme"
@@ -25,7 +21,16 @@
 		},
 		"resume": {
 			"title": "Resume",
-			"age": "19 years old",
+			"name": "Eugene Ohvatuk",
+			"career": "Frontend developer",
+			"age": {
+				"title": "Age",
+				"value": "19 y.o."
+			},
+			"country": {
+				"title": "Country",
+				"value": "Belarus"
+			},
 			"content": {
 				"p1": "My name is Eugene Ohvatuk and I specialize in programming. I live in <b>Belarus</b>, where I received a specialized secondary education and qualification as a software technician. I have been actively involved in web development for almost two years now, and during this time I have gained considerable experience in this area.",
 				"p2": "I am proficient in <b>HTML, CSS (as well as the SASS preprocessor) and JavaScript, including ES6 syntax</b>. Lately I've been writing <b>TypeScript</b> applications using <b>React and Redux</b> libraries. I am constantly improving my skills and learning new things.",

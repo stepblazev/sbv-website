@@ -16,20 +16,6 @@
 		]
 	},
 	{
-		"id": 2,
-		"name": "todo-typescript",
-		"tech": "ts, html, css",
-		"github": "https://github.com/stepblazev/todo-typescript",
-		"ghPages": "https://stepblazev.github.io/todo-typescript/",
-		"preview": [
-			"//live.staticflickr.com/65535/53049934689_d62790a885_k.jpg",
-			"//live.staticflickr.com/65535/53049934659_1c6da36138_k.jpg",
-			"//live.staticflickr.com/65535/53049934649_620eba85d5_k.jpg",
-			"//live.staticflickr.com/65535/53050131380_8f0871375b_k.jpg",
-			"//live.staticflickr.com/65535/53049934639_40d9c521f6_k.jpg"
-		]
-	},
-	{
 		"id": 3,
 		"name": "computer-store-react",
 		"tech": "ts, react, css, axios, redux",
@@ -84,6 +70,20 @@
 			"//live.staticflickr.com/65535/53015631274_64f1bb4f3c_h.jpg",
 			"//live.staticflickr.com/65535/53015631254_833f201d8f_h.jpg",
 			"//live.staticflickr.com/65535/53015473741_8368b55d9c_h.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"name": "todo-typescript",
+		"tech": "ts, html, css",
+		"github": "https://github.com/stepblazev/todo-typescript",
+		"ghPages": "https://stepblazev.github.io/todo-typescript/",
+		"preview": [
+			"//live.staticflickr.com/65535/53049934689_d62790a885_k.jpg",
+			"//live.staticflickr.com/65535/53049934659_1c6da36138_k.jpg",
+			"//live.staticflickr.com/65535/53049934649_620eba85d5_k.jpg",
+			"//live.staticflickr.com/65535/53050131380_8f0871375b_k.jpg",
+			"//live.staticflickr.com/65535/53049934639_40d9c521f6_k.jpg"
 		]
 	}
 ]
