@@ -13,7 +13,7 @@
 				"feedback": "Feedback"
 			},
 			"welcome": {
-				"p1": "Welcome to my website! My name is <b>Eugene Ohvatuk (nickname SBV)</b> and I've been doing web development. My main technology stack is React. I try to create web applications that are beautiful, easy to use and as efficient as possible.",
+				"p1": "Welcome to my website! My name is <b>Eugene Ohvatuk (nickname SBV)</b> and I've been doing <b>web development</b>. My main technology stack is React. I try to create web applications that are beautiful, easy to use and as efficient as possible.",
 				"p2": "On this website I present my work and experiments in web development. Here you can read about my projects and learn more about how I work.",
 				"p3": "Be assured that no personal information is collected on my site. If you have any questions, feel free to contact me by email <b>ohvatuki@gmail.com</b> or via the feedback form.",
 				"p4": "Thanks for visiting my site, I hope you find a lot of interesting things here!"
@@ -31,11 +31,12 @@
 				"title": "Country",
 				"value": "Belarus"
 			},
+			"skills": "Skills",
+			"contacts": "Contacts",
 			"content": {
-				"p1": "My name is Eugene Ohvatuk and I specialize in programming. I live in <b>Belarus</b>, where I received a specialized secondary education and qualification as a software technician. I have been actively involved in web development for almost two years now, and during this time I have gained considerable experience in this area.",
-				"p2": "I am proficient in <b>HTML, CSS (as well as the SASS preprocessor) and JavaScript, including ES6 syntax</b>. Lately I've been writing <b>TypeScript</b> applications using <b>React and Redux</b> libraries. I am constantly improving my skills and learning new things.",
-				"p3": "However, my work is not limited to the frontend. I also have experience with the server side of applications using <b>Node.js</b> and the <b>Express</b> framework. I am also familiar with <b>SQL</b>, and I have experience with databases (I used <b>PostgreSQL</b> for my purposes).",
-				"p4": "I am ready to apply my knowledge and web development skills to new projects and continue my professional growth. I am looking for a <b>Frontend Developer</b> position with a company where I can gain new experience and learn more about modern technologies. I look forward to discussing my qualification and joining your team."
+				"common": "My name is <b>Eugene Ohvatuk</b>, I am <b>19 years old</b> and for the last few years I have been involved in programming. At the moment I live in <b>Belarus</b>, where I got a specialized secondary education and qualification of a software engineer. I have been actively involved in <b>web development</b> for <b>two years</b> already and during this time I have gained significant experience in this sphere. I am engaged in both page layout and creating applications based on frameworks and libraries.",
+				"skills": "I am proficient in <b>HTML, CSS, SASS preprocessor</b> (I layout mostly in flex) and <b>JavaScript</b>, including ES6 syntax. In the <b>last year and a half</b> I've been actively studying <b>React framework</b>, <b>TypeScript language</b> and <b>Redux and RTK libraries</b> for storing application state. I have experience in creating user interfaces based on the <b>Material UI library</b>. I am always improving my skills and learning new stuff.<br><br>However, my work is not limited to frontend only. I also have experience with server-side applications using <b>Node.js</b> and the <b>Express framework</b>. I developed REST APIs, which allowed me to exchange data between client and server side applications. My knowledge includes working with <b>SQL</b> query language, and experience with <b>PostgreSQL</b> database.",
+				"experience": "In <b>2023</b>, I successfully graduated from Molodechno Trade and Economic College of Molodechno, in specialty <b>\"Software of Information Technologies\"</b>, having received the qualification <b>\"Software Engineer\"</b>. My education provided extended knowledge in the field of software development.<br><br>Currently, <b>I have no commercial experience</b> in web development. My goal is to apply the knowledge and skills I have gained in practice and to grow as an IT professional. In searching for a Frontend Developer position, I aim to contribute to your company while gaining new experience and increasing my knowledge of modern technologies."
 			}
 		},
 		"feedback": {

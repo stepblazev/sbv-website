@@ -22,28 +22,21 @@ export default function Resume() {
 						<ExtraContent title='Общая информация' ICON={CommonSVG}>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p1'),
+									__html: t('pages.resume.content.common'),
 								}}
 							></article>
 						</ExtraContent>
 						<ExtraContent title='Навыки и технологии разработки' ICON={SkillsSVG}>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p2'),
+									__html: t('pages.resume.content.skills'),
 								}}
 							></article>
 						</ExtraContent>
 						<ExtraContent title='Образование и опыт работы' ICON={EducSVG}>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p3'),
-								}}
-							></article>
-						</ExtraContent>
-						<ExtraContent title='Дополнительная информация'>
-							<article
-								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.p4'),
+									__html: t('pages.resume.content.experience'),
 								}}
 							></article>
 						</ExtraContent>

@@ -33,9 +33,9 @@ export default function ProfileCard() {
 					{t('pages.resume.country.value')}
 				</li>
 			</ul>
-			<h3 className={classes.hder}>Технологии</h3>
+			<h3 className={classes.hder}>{t('pages.resume.skills')}</h3>
 			<Skills />
-			<h3 className={classes.hder}>Контакты</h3>
+			<h3 className={classes.hder}>{t('pages.resume.contacts')}</h3>
 			<ul className={classes.links}>
 				<li>
 					<a href='tel:+375447102441'>
