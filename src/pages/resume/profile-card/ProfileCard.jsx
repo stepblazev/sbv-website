@@ -5,6 +5,10 @@ import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import photo from '../../../assets/images/photo.webp';
 import Skills from '../skills/Skills';
 import classes from './profile-card.module.scss';
+import { SlSpeech as MailSVG } from 'react-icons/sl';
+import { BsTelephone as PhoneSVG } from 'react-icons/bs';
+import RoundLink from '../../../components/_UI/round-link/RoundLink';
+import { SlSocialLinkedin, SlSocialGithub, SlSocialVkontakte } from 'react-icons/sl';
 
 export default function ProfileCard() {
 	const { t } = useTranslation();
@@ -29,8 +33,42 @@ export default function ProfileCard() {
 					{t('pages.resume.country.value')}
 				</li>
 			</ul>
-			<div className={classes.skills}>
-				<Skills />
+			<h3 className={classes.hder}>Технологии</h3>
+			<Skills />
+			<h3 className={classes.hder}>Контакты</h3>
+			<ul className={classes.links}>
+				<li>
+					<a href='tel:+375447102441'>
+						<PhoneSVG />
+						+375-44-7102441
+					</a>
+				</li>
+				<li>
+					<a href='mailto:ohvatuki@gmail.com'>
+						<MailSVG />
+						ohvatuki@gmail.com
+					</a>
+				</li>
+			</ul>
+			<div className={classes.socials}>
+				<RoundLink
+					tooltip='LinkedIn'
+					ICON={SlSocialLinkedin}
+					color='#007dbb'
+					href='https://www.linkedin.com/in/eugene-ohvatuk-152103267'
+				/>
+				<RoundLink
+					tooltip='GitHub'
+					ICON={SlSocialGithub}
+					color='#6e5494'
+					href='https://github.com/stepblazev'
+				/>
+				<RoundLink
+					tooltip='VKontakte'
+					ICON={SlSocialVkontakte}
+					color='#4C75A3'
+					href='https://vk.com/zhohvatuk'
+				/>
 			</div>
 		</div>
 	);

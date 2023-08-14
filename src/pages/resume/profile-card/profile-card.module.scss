@@ -2,7 +2,7 @@
 @import '../../../styles/animations';
 
 .card_dark {
-	min-width: 25%;
+	min-width: 33%;
 	padding: 10px;
 	border-radius: 7px;
 	overflow: hidden;
@@ -16,6 +16,12 @@
 	@extend .card_dark;
 	background-color: $light;
 	background-image: url(../../../assets/svg/topography_light.svg);
+}
+
+.hder {
+	margin: 20px 0 15px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .avatar {
@@ -65,6 +71,24 @@
 	}
 }
 
-.skills {
-	margin-top: 20px;
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.socials {
+	margin: 30px 0 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
