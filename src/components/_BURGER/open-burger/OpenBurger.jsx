@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import { themeContext } from '../../other/themeContext';
+import { themeContext } from '../../../other/themeContext';
 import { TfiMenu as MenuSVG } from 'react-icons/tfi';
 import classes from './open-burger.module.scss';
 
+// FIXME svg color
 export default function OpenBurger() {
 	const { isDark, setIsBurger, isBurger } = useContext(themeContext);
 

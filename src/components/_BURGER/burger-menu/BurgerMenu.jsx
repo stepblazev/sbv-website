@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import LanguageSwitcher from '../language-switcher/LanguageSwitcher';
-import ThemeSwitcher from '../theme-switcher/ThemeSwitcher';
-import { themeContext } from '../../other/themeContext';
+import LanguageSwitcher from '../../language-switcher/LanguageSwitcher';
+import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher';
+import { themeContext } from '../../../other/themeContext';
 import { SlSpeech as MailSVG } from 'react-icons/sl';
 import { BsTelephone as PhoneSVG } from 'react-icons/bs';
 import { Link, useLocation } from 'react-router-dom';

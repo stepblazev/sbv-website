@@ -3,7 +3,7 @@ import { themeContext } from '../../other/themeContext';
 import Header from '../header/Header';
 import FixedLinks from '../fixed-links/FixedLinks';
 import Version from '../version/Version';
-import BurgerMenu from '../burger-menu/BurgerMenu';
+import BurgerMenu from '../_BURGER/burger-menu/BurgerMenu';
 import classes from './layout.module.scss';
 
 export default function Layout({ children }) {

@@ -1,24 +1,15 @@
-@import '../../styles/variables';
+@import '../../../styles/variables';
 
-.hide_dark {
+.hide {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: transparent;
-	transition: all 0.3s ease 0.2s;
+	transition: transform 0.3s ease 0.2s, opacity 0.3s ease 0.2s;
 
 	svg {
-		fill: $light;
 		width: 28px;
 		height: 28px;
-	}
-}
-
-.hide_light {
-	@extend .hide_dark;
-
-	svg {
-		fill: $dark;
 	}
 }
 

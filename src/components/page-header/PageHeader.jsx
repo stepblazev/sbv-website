@@ -5,7 +5,7 @@ export default function PageHeader({ title, SVG }) {
 	return (
 		<div className={classes.header}>
 			<BackHome />
-			<h1>
+			<h1 className={classes.header__title}>
 				<SVG />
 				{title}
 			</h1>

@@ -8,6 +8,11 @@ a {
 	-webkit-tap-highlight-color: transparent;
 }
 
+a,
+button {
+	cursor: pointer;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,10 +25,6 @@ a {
 
 body {
 	overflow-x: hidden !important;
-}
-
-button {
-	cursor: pointer;
 }
 
 .container {

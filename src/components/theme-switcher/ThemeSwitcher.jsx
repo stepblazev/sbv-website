@@ -21,12 +21,12 @@ export default function ThemeSwitcher() {
 			{isDark ? (
 				<>
 					<ImSun />
-					{t('theme.lightTheme')}
+					{t('theme.light')}
 				</>
 			) : (
 				<>
 					<HiOutlineMoon />
-					{t('theme.darkTheme')}
+					{t('theme.dark')}
 				</>
 			)}
 		</button>
