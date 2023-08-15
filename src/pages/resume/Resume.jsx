@@ -19,24 +19,33 @@ export default function Resume() {
 				<div className={classes.resume__content}>
 					<ProfileCard />
 					<div className={classes.resume__contentArticles}>
-						<ExtraContent title='Общая информация' ICON={CommonSVG}>
+						<ExtraContent
+							title={t('pages.resume.content.common.title')}
+							ICON={CommonSVG}
+						>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.common'),
+									__html: t('pages.resume.content.common.value'),
 								}}
 							></article>
 						</ExtraContent>
-						<ExtraContent title='Навыки и технологии разработки' ICON={SkillsSVG}>
+						<ExtraContent
+							title={t('pages.resume.content.skills.title')}
+							ICON={SkillsSVG}
+						>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.skills'),
+									__html: t('pages.resume.content.skills.value'),
 								}}
 							></article>
 						</ExtraContent>
-						<ExtraContent title='Образование и опыт работы' ICON={EducSVG}>
+						<ExtraContent
+							title={t('pages.resume.content.experience.title')}
+							ICON={EducSVG}
+						>
 							<article
 								dangerouslySetInnerHTML={{
-									__html: t('pages.resume.content.experience'),
+									__html: t('pages.resume.content.experience.value'),
 								}}
 							></article>
 						</ExtraContent>

@@ -5,7 +5,7 @@ import ImageLoader from '../../../components/_UI/image-loader/ImageLoader';
 import photo from '../../../assets/images/photo.webp';
 import Skills from '../skills/Skills';
 import classes from './profile-card.module.scss';
-import { SlSpeech as MailSVG } from 'react-icons/sl';
+import { AiOutlineMail as MailSVG } from 'react-icons/ai';
 import { BsTelephone as PhoneSVG } from 'react-icons/bs';
 import RoundLink from '../../../components/_UI/round-link/RoundLink';
 import { SlSocialLinkedin, SlSocialGithub, SlSocialVkontakte } from 'react-icons/sl';
@@ -36,18 +36,16 @@ export default function ProfileCard() {
 			<h3 className={classes.hder}>{t('pages.resume.skills')}</h3>
 			<Skills />
 			<h3 className={classes.hder}>{t('pages.resume.contacts')}</h3>
-			<ul className={classes.links}>
+			<ul className={isDark ? classes.about_dark : classes.about_light}>
 				<li>
-					<a href='tel:+375447102441'>
-						<PhoneSVG />
-						+375-44-7102441
-					</a>
+					<PhoneSVG />
+					<div></div>
+					<a href='tel:+375447102441'>+375-44-7102441</a>
 				</li>
 				<li>
-					<a href='mailto:ohvatuki@gmail.com'>
-						<MailSVG />
-						ohvatuki@gmail.com
-					</a>
+					<MailSVG />
+					<div></div>
+					<a href='mailto:ohvatuki@gmail.com'>ohvatuki@gmail.com</a>
 				</li>
 			</ul>
 			<div className={classes.socials}>
